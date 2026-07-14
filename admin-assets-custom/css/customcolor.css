@@ -1,0 +1,39 @@
+/*******************
+Text Colors
+*******************/
+.text-white {color: #ffffff !important; }
+.text-danger {color: #ff5c6c !important; }
+.text-muted {color: #9b9b9b !important; }
+.text-warning {color: #ff9041 !important; }
+.text-success {color: #24d2b5 !important; }
+.text-info {color: #20aee3 !important; }
+.text-inverse {color: #2f3d4a !important; }
+html body .text-blue {color: #02bec9; }
+html body .text-purple {color: #7460ee; }
+html body .text-primary {color: #6772e5 !important; }
+html body .text-megna {color: #56c0d8; }
+html body .text-dark {color: #67757c; }
+html body .text-themecolor {color: #20aee3; }
+/*******************
+Background Colors
+*******************/
+.bg-dark {background-color: #67757c; }
+.bg-primary {background-color: #6772e5 !important; }
+.bg-success {background-color: #24d2b5 !important; }
+.bg-info {background-color: #20aee3 !important; }
+.bg-warning {background-color: #ff9041 !important; }
+.bg-danger {background-color: #ff5c6c !important; }
+html body .bg-megna {background-color: #56c0d8; }
+html body .bg-theme {background-color: #20aee3; }
+html body .bg-inverse {background-color: #2f3d4a; }
+html body .bg-purple {background-color: #7460ee; }
+html body .bg-light-part {background-color: rgba(0, 0, 0, 0.02); }
+html body .bg-light-primary {background-color: #f1effd; }
+html body .bg-light-success {background-color: #e8fdeb; }
+html body .bg-light-info {background-color: #cfecfe; }
+html body .bg-light-extra {background-color: #ebf3f5; }
+html body .bg-light-warning {background-color: #fff8ec; }
+html body .bg-light-danger {background-color: #f9e7eb; }
+html body .bg-light-inverse {background-color: #f6f6f6; }
+html body .bg-light {background-color: #e9edf2; }
+html body .bg-white {background-color: #ffffff; }

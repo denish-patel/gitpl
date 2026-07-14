@@ -1,0 +1,47 @@
+/**********************/
+/*Contact Page*/
+/**********************/
+#contentSection .contact-about {padding:10px 0px 10px 0px;margin-bottom:20px;}
+#contentSection .contact-about h4 {font-size: 24px;font-weight: 600;text-transform: uppercase;color: #5a5a5a;margin: 0 0 20px 0;letter-spacing: 1px;line-height: 16px;text-align: center;}
+#contentSection .contact-about p{font-size:16px; font-weight: 400;line-height: 28px;color: #848484;line-height: 1.6;text-align: center;margin: 0 0 20px 0;}
+#contentSection .contact-address{padding:10px 20px}
+
+#contentSection .contact-address h4{font-size: 16px;font-weight: 600;text-transform: uppercase;color: #5a5a5a;margin: 0 0 20px 0;letter-spacing: 1px;line-height: 16px;}
+#contentSection .contact-address address{font-size: 16px;line-height: 26px;font-weight: 400;margin-bottom: 2px;}
+#contentSection .contact-address address strong{font-weight: 600;}
+#contentSection .contact-address address.emaillink{color: #249bed;}
+#contentSection .contact-address .contact-list .emaillink{color: #249bed;}
+#contentSection .contact-address .wpcf7-form-control-wrap {position: relative;width:50%;}
+#contentSection .contact-address .wpcf7-form-control-wrap input, .contact-address .wpcf7-form-control-wrap textarea {width:100%;background: transparent !important;border: 1px transparent !important; box-shadow: none !important;border-bottom: 1px solid !important;letter-spacing: 1.5px !important;padding-bottom: 0.8rem !important;margin-top: 0.5rem !important;}
+#contentSection .contact-address .wpcf7-form-control-wrap input.submit-button {border: 1px solid #888888 !important;padding: 0.8rem 2.5rem !important;color: #888888;border-radius: 4px;}
+#contentSection .contact-address .wpcf7-form-control-wrap input.submit-button:hover {border-color:#1786d7 !important;color:#1786d7;font-weight:600}
+
+
+@media (max-width: 319.98px) { 
+    
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 320px ) and (max-width: 575.98px) { 
+    
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+   
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+}

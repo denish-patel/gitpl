@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-ng-app="userGitpl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta name="google-site-verification" content="" />
+
+        <title>Genie InfoTech Pvt Ltd</title>
+        <link rel='shortcut icon' href='assets/images/gitpl-favicon.png' />       
+        <!--css-->
+        <link href="../assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="../assets/node_modules/bootstrap-select/bootstrap-select.min.css" rel="stylesheet"/>    
+        <link href="../assets/node_modules/owl.carousel/owl.carousel.min.css" rel="stylesheet"/>
+        <link href="../assets/node_modules/hero-slider/hero.css" rel="stylesheet"/>
+        <link href="../user-assets-custom/css/style.css" rel="stylesheet"/>  
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+        <!--js--> 
+
+        <script src="../assets/node_modules/jquery/jquery.min.js"></script>
+        <script src="../user-assets-custom/js/angular.min.js"></script>
+        <script src="../user-assets-custom/js/angular-controller.js"></script>
+    </head>
+    <body class="card-no-border ">        
+        <div id="main-wrapper">
+             <!--Topbar Start-->
+            <div id="topbar" class="container-fluid p-0">
+                <div class="container">
+                    <div class="row">
+                        <ul class="mr-auto"></ul>
+                        <ul class="list-inline topbar-inline">
+                            <li class="list-inline-item"><a href="about-gitpl.html">About</a></li>
+                            <li class="list-inline-item"><a href="why-gitpl.html">Why GITPL?</a></li>                            
+                            <li class="list-inline-item"><a href="gitpl-offers.html">Offers</a></li>
+                           <li class="list-inline-item"><a href="contact-gitpl.html">Contact</a></li>
+                            <li class="list-inline-item">Search &nbsp;<i class="fa fa-search"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Topbar End-->
+            
+            <!--Navbar Start-->
+            <nav id="gitplNavbar" class="navbar navbar-light navbar-expand-lg" data-ng-controller="MenuController">
+                <div class='container'>
+                    <a class="navbar-brand" href="index.html" >
+                        <img src="../assets/images/GITPLlogo_b.png" class="d-inline-block align-top" alt="logo"  />
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gitplMainMenu" aria-controls="gitplMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="gitplMainMenu" >
+                        <ul class="mr-auto"></ul>
+                        <ul class="navbar-nav ">                    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="javascript:void(0)" id="navbarDropdownS" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Solution
+                                    <h5 class="subtext text-uppercase m-0">Provide Solution</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownS">
+                                    <!--<div class="container custom-ribbon menuFilter-hs">
+                                        <div class='col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto p-0'>
+                                            <ul class="navbar-nav row " >
+                                                <li data-ng-repeat="mlsf in mlSolutionFilter" class="nav-item col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 filter-button {{mlsf.class}}" data-ng-click="filterClick(mlsf.class)" >
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="{{mlsf.icon}}"></i>                                                        
+                                                        <span class="pull-right m-0">{{mlsf.menuName}}</span>
+                                                    </a>
+                                                </li>                                   
+                                            </ul>
+                                        </div>
+                                    </div>--> 
+
+                                    <div class="container mega-dropdown m-b-10 sub-menu-hs">                            
+                                        <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+                                            <ul class="navbar-nav row ">
+                                                <li data-ng-repeat="mlslm in mlSolutionMenus" class="nav-item col-sm filter {{mlslm.solutionFilter}} sub-filter {{mlslm.class}}" data-ng-click="subfilterClick(mlslm.class)">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                        <i class="{{mlslm.icon}}"></i>
+                                                        {{mlslm.menuName}}
+                                                        <span>{{mlslm.subtitle}}</span>
+                                                    </a>
+                                                </li>                                   
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--Sub sub menu filter-->
+                                    <div class="container mega-dropdown m-b-10 sub-sub-menu-hs">                            
+                                        <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+                                            <ul class="navbar-nav row ">
+                                                <li data-ng-repeat="mlsssm in mlSolutionSubMenus " class="nav-item col-sm subfilter {{mlsssm.subMenusFilter}}">
+                                                    <a href="{{mlsssm.href}}" class="nav-link text-uppercase">
+                                                        <i class="{{mlsssm.icon}}"></i>
+                                                        {{mlsssm.menuName}}
+                                                        <span>{{mlsssm.subtitle}}</span>
+                                                    </a>
+                                                </li>                                  
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>     
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="javascript:void(0)" id="navbarDropdownM" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Services
+                                    <h5 class="subtext text-uppercase m-0">Provide Services</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownM">
+                                    <!--<div class="container custom-ribbon">
+                                        <div class='col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto p-0'>
+                                            <ul class="navbar-nav row">
+                                                <li data-ng-repeat="mlssf in mlServicesFilter"  class="nav-item col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 filter-button {{mlssf.class}}" data-ng-click="filterClick(mlssf.class)">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="{{mlssf.icon}}"></i>
+                                                        <span class="pull-right m-0">{{mlssf.menuName}}</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>-->
+                                    <div class="container mega-dropdown m-b-10 sub-menu-hs">
+                                        <ul class="navbar-nav row">
+                                            <li data-ng-repeat="(key,mlssmf) in mlServicesMenus" class="nav-item col-sm filter {{mlssmf.ServicesFilter}} sub-filter {{mlssmf.class}}" data-ng-click="subfilterClick(mlssmf.class)">
+                                                <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                    <i class="{{mlssmf.icon}}"></i>
+                                                    {{mlssmf.menuName}}
+                                                    <span>{{mlssmf.subtitle}}</span>
+                                                </a>                                    
+                                            </li>
+                                        </ul>                        
+                                    </div>
+                                    <!--Sub sub menu filter-->
+                                    <div class="container mega-dropdown m-b-10 sub-sub-menu-hs">                            
+                                        <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+                                            <ul class="navbar-nav row ">
+                                                <li data-ng-repeat="mlsssm in mlServicesSubMenus" class="nav-item col-sm subfilter {{mlsssm.subMenusFilter}}">
+                                                    <a  href="{{mlsssm.href}}" class="nav-link text-uppercase">
+                                                        <i class="{{mlsssm.icon}}"></i>
+                                                        {{mlsssm.menuName}}
+                                                        <span>{{mlsssm.subtitle}}</span>
+                                                    </a>
+                                                </li>                                  
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="business-challenges.html">
+                                    Business Challenges
+                                    <h5 class="subtext text-uppercase m-0">Provide Services</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+             <!--Navbar End-->
+
+
+            <div id="page-wrapper">                
+
+                <!--Static Banner section start-->
+                <div id="staticBanner" class="container-fluid p-0">
+                    <div class="container">
+                        <div class="row">
+                            <img src="https://www.cpaaustralia.com.au/~/media/corporate/allimages/1-become-a-cpa/migration-assessment/migration-assessment-banner.jpg?h=269&la=en&w=960" alt="" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+                <!--Static Banner section End-->
+
+                <!--breadcrumb section start-->
+                <div id="breadcrumb" class="container-fluid p-0">
+                    <div class="container">
+                        <div class="row">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item "><a href="home">Home</a></li>
+                                <li class="breadcrumb-item "><a href="home">Solution</a></li>
+                                <li class="breadcrumb-item "><a href="home">Cloud Solution</a></li>
+                                <li class="breadcrumb-item active ">Cloud Migration Services</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--breadcrumb section end-->
+
+                <!--Content section Start-->
+                <div id="contentSection" class="container-fluid p-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-xs-12 mainContent">
+                                <h4>Mail migration</h4>
+                                <p>Email migration is a process in which an email or multiple email messages are migrated from one email client to another email client. an equivalent term is mailbox migration, in which case records such as e-mails, appointments, contacts or tasks may also be migrated.</p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p class="pointTitle">Lorem Ipsum is simply dummy text of the printing and typesetting:</p>
+
+                                <ul id="mainContentTab" class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item col-sm">
+                                        <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="true">
+                                            <i class="fa fa-soundcloud"></i>
+                                            IMAP Migration
+                                            <h6>We're the partner you can trust</h6>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item col-sm">
+                                        <a class="nav-link" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two" aria-selected="false">
+                                            <i class="fa fa-soundcloud"></i>
+                                            Cutover Migration
+                                            <h6>We're the partner you can trust</h6>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item col-sm">
+                                        <a class="nav-link" id="three-tab" data-toggle="tab" href="#three" role="tab" aria-controls="Three" aria-selected="false">
+                                            <i class="fa fa-soundcloud"></i>
+                                            Hybrid Migration
+                                            <h6>We're the partner you can trust</h6>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="one-tab">
+                                        <h4>IMAP migration</h4>
+                                        <p>IMAP migration (Internet Message Access Protocol migration) is a way to move email services from existing non-Exchange email servers to later versions of Microsoft Exchange Server, Exchange Online or Office 365.</p>            
+                                        <p>Administrators begin IMAP migrations using the Exchange Administration Center or the Exchange Management Shell, which allow user mailbox content to migrate from an IMAP system to new Exchange mailboxes.</p>
+                                        <p>An IMAP migration process varies depending on which product is used -- since there is no one single IMAP server-- but the overall process for IMAP migrations to a cloud-based email service begins with the Exchange administrator obtaining the full name of the IMAP email server. Next, the admin uses a tool like Excel to create a CSV file containing details of each email account to be migrated, though the actual formatting will vary depending on the IMAP system. Then the admin establishes a connection between the source email server and the destination email system.</p>
+                                        <p>After the IMAP migration is complete, the administrator can redirect email messages directly to the new server, and then delete the migration batch to stop synchronization. At this point, the new email system is operational and the admin can stop the old email server.</p>
+                                        <div class="vidImg">
+                                            <img src="https://support.content.office.net/en-us/media/624879f0-305f-4893-b4c2-c64736a40d94.png" class="img-responsive" alt=""/>                                
+                                        </div>                            
+                                        <p>An IMAP migration takes several hours to several days depending on the number of mailboxes, batch sizes and the amount of content in each mailbox.</p>
+                                        <p>Email messages larger than 35 megabytes cannot be migrated, and only up to 500,000 items per mailbox can be transferred.</p>
+                                        <p>To make an IMAP migration faster, the administrator can increase connection limits to the IMAP server and users can delete old email content prior to the migration. The administrator also can organize the IMAP migration with small, focused batches of mailboxes.</p>
+                                        <p>A staged (partial) migration is advisable when migration involves a larger number of mailboxes, or the process must be performed incrementally using smaller mailbox groups. Later versions of Exchange email servers must use cutover migration. This type of migration is limited to Exchange deployments of 1,000 mailboxes, or use hybrid deployments, which allow local and online deployments to coexist until administrators can organize migrations.</p>
+                                        <div class="vidImg">
+                                            <iframe src="https://www.youtube.com/embed/ZB3QOX4ht-Q?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                                        <h4 >cutover migration</h4>
+                                        <p>The cutover migration process starts with the destination Exchange server -- on-premise or online -- which receives information about the mailboxes, groups, calendars and contacts. The system then provisions the new mailboxes and copies content, duplicating as much of the original system as possible.</p>             
+                                        <p>Administrators receive reports of the cutover -- including details of failed mailbox migrations. Old mail is deleted and the Exchange administrator can send mail directly to the new server and delete the cutover migration batch. At this point, the old Exchange server can be decommissioned.</p>             
+                                        <div class="vidImg">
+                                            <img src="https://www.codetwo.com/admins-blog/wp-content/uploads/2016/12/Exchange_To_Office365_Migration_Scenarios_01.png" class="img-responsive" alt=""/>
+                                        </div>
+                                        <p >The migration process is limited to Exchange deployments of 1,000 mailboxes and can take numerous hours to days depending on the number of mailboxes and the volume of migrated content.</p>             
+                                        <p>When migration involves a larger number of mailboxes, or the process must be performed incrementally using smaller mailbox groups, administrators can opt for staged (partial) migration. Non-Exchange mailboxes can be migrated into a new Exchange server environment using Internet Message Access Protocol migration.</p>            
+                                    </div>
+                                    <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                                        <h4 >Hybrid migration</h4>
+                                        <p >Hybrid Migration is the migration process that enables On-premises mailboxes migration to On-site or an approach to ensure Exchange to Office 365 migration and vice-versa. With hands on this approach, an individual can easily transfer the already existing mailboxes between Exchange Server and Exchange Online.</p> 
+                                        <div class="vidImg">
+                                            <img src="https://www.codetwo.com/admins-blog/wp-content/uploads/2016/12/Exchange_To_Office365_Migration_Scenarios_03.png" class="img-responsive" alt=""/>
+                                        </div>
+                                        <p class="pointTitle">What are the Benefits of Exchange-based Hybrid Deployment?</p>
+                                        <p>Freedom to migrate either Exchange Online mailboxes to the Exchange organization or On-Premises Exchange mailboxes to the Exchange Online organization.</p>
+                                        <p>No need to create new user mailboxes and import information.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 sideBarContent"> 
+
+                                <!--Case Study Start-->
+                                <div id="caseStudy" >
+                                    <h4>Case Study</h4>
+                                    <div class="caseStudy-block">
+                                        <div class="caseStudy-overlay"></div>
+                                        <a href="#" class="">
+                                            <span>Global Expeditions Group</span>
+                                            <h3>Setting the Stage for Success</h3>
+                                            <p>view case study <i class="fa fa-arrow-right"></i></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--Case Study End-->
+
+                                <!--Testimonial Bar start-->
+                                <div id="testimonialBar">
+                                    <h4>Testimonial</h4>
+                                    <div class="quoteIcon">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <div class="testimonialBarContent">
+                                        <img src="https://gravatar.com/avatar/b35505a8799ee6ec3cba72ac4c5185be?s=80&d=https://codepen.io/assets/avatars/user-avatar-80x80-bdcd44a3bfb9a5fd01eb8b86f9e033fa1a9897c3a15b33adfc2649a002dab1b6.png" alt="" class="rounded-circle">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    </div>
+                                </div> 
+                                <!--Testimonial Bar End-->
+
+                                <!--QuickLink Bar start-->
+                                <div id="quickLinks" >
+                                    <h4>Quick Links</h4>
+                                    <div class="quickLinks-block">                        
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href="#">
+                                                    <h5>Global Expeditions Group</h5>
+                                                    <p>Freedom to migrate either Exchange Online.</p>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#">
+                                                    <h5>Global Expeditions Group</h5>
+                                                    <p>Freedom to migrate either Exchange Online mailboxes.</p>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#">
+                                                    <h5>Global Expeditions Group</h5>
+                                                    <p>Freedom to migrate to the Exchange organization.</p>
+                                                </a>
+                                            </li>
+                                        </ul> 
+                                    </div>
+                                </div>
+                                <!--QuickLink Bar End-->
+
+                                <!--QueryBLock Bar start-->
+                                <div id="queryBlock" >
+                                    <h4>Having Problem?</h4>
+                                    <strong>Need Support?</strong>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry dummy text printing.</p>
+
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input type="text" class="form-control" id="inputPassword4" placeholder="Full Name">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input type="text" class="form-control" id="inputcomp" placeholder="Company">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input type="text" class="form-control" id="inputContact" placeholder="Contact">
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <input type="text" class="form-control" id="inputCity" placeholder="State">
+                                            </div> 
+                                            <div class="form-group col-md-12">
+                                                <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!--QueryBLock Bar End-->
+
+                                <!--Download Block start-->
+                                <!--<div class="brochureDownload">
+                                    <a href="#"><img src="http://www.tecaero.in/images/brochure.jpg" alt="" class="img-responsive"/></a>
+                                </div>-->
+                                <!--Download Block End-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Content section End-->
+
+              
+                <div id="supportContain" class="container-fluid p-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 supportContain-Block">
+                                <p><strong>Want to know more about Mail Migration?</strong> <span> Call us on</span> <strong>+91 (020) 67445525</strong> <span>or email us at</span> <a href="mailto:sita.eleswarapu@gitpl.com?subject=Please tell me more about Microsoft 365"><strong>sita.eleswarapu@gitpl.com</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer" class="container-fluid ">
+                    <div class="container"> 
+                        <div class="row"> 
+                            <div class="col-sm-6 footer-widget"> 
+                                <div class="footer-about"> 
+                                    <h4>About Us</h4> 
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quod mollitia quisquam. Architecto quam in atque sint voluptatem, consequatur consectetur ab ipsum maxime quod consequuntur excepturi illum dolorem ex modi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur animi id ex perspiciatis distinctio sequi minima. Velit inventore fugit, quisquam molestias nesciunt dolorem reprehenderit temporibus unde, cupiditate pariatur libero dolorum!</p>
+                                    <a href="about.html" class="btn btn-custom-reverse">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 footer-widget"> 
+                                <h4>Explore</h4> 
+                                <ul> 
+                                    <li><a href="#">Life at GITPL</a></li>
+                                    <li><a href="#">Career</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                </ul> 
+                            </div>
+                            <div class="col-md-3 col-sm-6 footer-widget"> 
+                                <h4>Social Media</h4> 
+                                <ul> 
+                                    <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                                    <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                                    <li><a href="#"><i class="fa fa-google-plus-square"></i> Google+</a></li>
+                                    <li><a href="#"><i class="fa fa-rss-square"></i> Blog</a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info"> 
+                        <div class="container"> 
+                            <div class="row"> 
+                                <div class="col-md-3 col-xs-6"> 
+                                    <i class="fa fa-headphones"></i> 
+                                    <a href="#">24/7 Customer Support</a> 
+                                </div>
+                                <div class="col-md-3 col-xs-6"> 
+                                    <i class="fa fa-envelope-o"></i> 
+                                    <a href="#">info@gitpl.com</a> 
+                                </div>
+                                <div class="col-md-3 col-xs-6"> 
+                                    <i class="fa fa-comments-o"></i> 
+                                    <a href="#">Click Here To Live Chat</a> 
+                                </div>
+                                <div class="col-md-3 col-xs-6"> 
+                                    <i class="fa fa-phone"></i> 
+                                    <a href="#">+44 000 000 000</a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="copyRight" class="container-fluid p-0"> 
+                    <div class="container">
+                        <div class="row">
+                            <p>Copyright 2018 © <a href="#">Genie InfoTech Pvt. Ltd.</a></p>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script src="../assets/node_modules/jquery/jquery.2.1.1.js"></script>
+            <!--<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+            <script src="../assets/node_modules/bootstrap/js/popper.min.js"></script>
+            <script src="../assets/node_modules/bootstrap/js/bootstrap.min.js"></script> 
+            <script src="../assets/node_modules/bootstrap-select/bootstrap-select.min.js"></script> 
+            <script src="../assets/node_modules/owl.carousel/owl.carousel.min.js"></script> 
+
+
+            <script src="../assets/node_modules/hero-slider/hero.js"></script> 
+            <script src="../user-assets-custom/js/timeline.js"></script> 
+            <script src="../user-assets-custom/js/waves.js"></script> 
+
+            <script src="../assets/node_modules/hero-slider/modernizr.js"></script>
+            <script>
+                $('#tId').selectpicker();
+
+                $(document).ready(function () {
+                    'use strict';
+                    console.log("Start Javascript Functions is working properly..");
+
+                    $('ul .dropdown-menu').on('click', function (event) {
+                        event.stopPropagation();
+                    });
+                    $('.testimonial-slider').owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        nav: false,
+                        dots: true,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                        items: 1
+                    });
+                    $('.owl-carousel').owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        nav: false,
+                        dots: false,
+                        autoplay: true,
+                        autoplayTimeout: 3000,
+                        autoplayHoverPause: true,
+                        responsive: {
+                            0: {items: 1},
+                            600: {items: 3},
+                            1000: {items: 8}
+                        }
+                    });
+
+                    $('label.tree-toggler').click(function () {
+                        $(this).parent().children('ul.tree').toggle(300);
+                    });
+
+                    $('.collapse').collapse({
+                        toggle: false
+                    })
+                    $('.toggle-btn').click(function () {
+                        $('.filter-btn').toggleClass('open');
+                    });
+
+                    $('.filter-btn a').click(function () {
+                        $('.filter-btn').removeClass('open');
+                    });
+                    $(".filter-btn").draggable();
+
+                    //        $("#owl-demo").owlCarousel({
+                    //
+                    //            navigation: false,
+                    //            slideSpeed: 300,
+                    //            paginationSpeed: 400,
+                    //            singleItem: true,
+                    //            video: true,
+                    //            items: 1,
+                    //            center: true,
+                    //            margin: 0
+                    //
+                    //        });
+
+                });
+            </script>
+        </div>        
+    </body>
+</html>

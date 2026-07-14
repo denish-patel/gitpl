@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Roy Patel",
+    "phone": "+91 9898098980",
+    "email": "roy123@gmail.com",
+    "role": "Designer",
+    "age": 28,
+    "Date": "12/03/2018",
+    "Salary": "$2000",
+    "image": "../assets/images/users/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sammer Patel",
+    "phone": "+91 9898098980",
+    "email": "sam@gmail.com",
+    "role": "Sales",
+    "age": 34,
+    "Date": "12/03/2018",
+    "Salary": "$3000",
+    "image": "../assets/images/users/2.jpg"
+  },
+  {
+    "name": "Payal Patel",
+    "phone": "+91 9898098980",
+    "email": "xxx123@gmail.com",
+    "role": "Sales",
+    "age": 32,
+    "Date": "12/03/2018",
+    "Salary": "$9000",
+    "id": 3,
+    "image": "../assets/images/users/3.jpg"
+  },
+  {
+    "name": "Shona Roy",
+    "phone": "+91 9898098980",
+    "email": "abc123@gmail.com",
+    "role": "Accountant",
+    "age": 23,
+    "Date": "12/03/2018",
+    "Salary": "$20000",
+    "id": 4,
+    "image": "../assets/images/users/4.jpg"
+  },
+  {
+    "name": "Rohit Roy",
+    "phone": "+91 9898098980",
+    "email": "pqr123@gmail.com",
+    "role": "Manager",
+    "age": 26,
+    "Date": "12/03/2018",
+    "Salary": "$5000",
+    "id": 5,
+    "image": "../assets/images/users/5.jpg"
+  },
+  {
+    "name": "Prakit Roy",
+    "phone": "+91 9898098980",
+    "email": "pq123@gmail.com",
+    "role": "CEO",
+    "age": 26,
+    "Date": "12/03/2018",
+    "Salary": "$15000",
+    "id": 6,
+    "image": "../assets/images/users/6.jpg"
+  },
+  {
+    "name": "Suraj Roy",
+    "phone": "+91 9898098980",
+    "email": "sq123@gmail.com",
+    "role": "Director",
+    "age": 36,
+    "Date": "12/03/2018",
+    "Salary": "$15000",
+    "id": 7,
+    "image": "../assets/images/users/7.jpg"
+  },
+  {
+    "name": "ROhit Roy",
+    "phone": "+91 9898098980",
+    "email": "r123@gmail.com",
+    "role": "Director",
+    "age": 59,
+    "Date": "12/03/2018",
+    "Salary": "$15000",
+    "id": 8,
+    "image": "../assets/images/users/8.jpg"
+  }
+  ,
+  {
+    "name": "ROhit Roy",
+    "phone": "+91 9898098980",
+    "email": "r123@gmail.com",
+    "role": "Director",
+    "age": 59,
+    "Date": "12/03/2018",
+    "Salary": "$15000",
+    "id": 9,
+    "image": "../assets/images/users/8.jpg"
+  }
+]

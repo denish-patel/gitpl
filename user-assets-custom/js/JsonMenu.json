@@ -1,0 +1,258 @@
+[     
+    {
+        "SolutionFilter": {
+            "stC": {
+                "icon": "icon-consulting",
+                "menuName": "Consulting",                
+                "class": "slfConsulting",
+                "order": "1"
+            },
+            "stR": {
+                "icon": "icon-reseller",
+                "menuName": "Reseller",                
+                "class": "slfReseller",
+                "order": "2"
+            },
+            "stD": {
+                "icon": "icon-deployment",
+                "menuName": "Deployment",                
+                "class": "slfDeployment",
+                "order": "3"
+            },
+            "stM": {
+                "icon": "icon-management",
+                "menuName": "Management",                
+                "class": "slfManagement",
+                "order": "4"
+            }
+        },
+        "ServicesFilter": {
+            "ssC": {
+                "icon": "icon-consulting",
+                "menuName": "Consulting",
+                "class": "ssfConsulting",
+                "order": 1
+            },
+            "ssD": {
+                "icon": "icon-deployment",
+                "menuName": "Deployment",
+                "class": "ssfDeployment",
+                "order": 2
+            },
+            "ssM": {
+                "icon": "icon-management",
+                "menuName": "Management",
+                "class": "ssfManagement",
+                "order": 3
+            },
+            "ssT": {
+                "icon": "fa fa-bitbucket",
+                "menuName": "Training",
+                "class": "ssfTraining",
+                "order": 4
+            }
+        }
+    },
+    {
+        "Solution": {
+            "subtitle": "We're the partner you can trust",
+            "subMenus": {
+                "cs": {
+                    "icon": "icon-cloudsolution",
+                    "menuName": "Cloud Solution",
+                    "subtitle": "We're the partner you can trust",
+                    "solutionFilter": "slfConsulting",
+                    "class": "slfcloudsolution",
+                    "order": 1
+                },            
+                "hw": {
+                    "icon": "icon-hardware",
+                    "menuName": "Hardware",
+                    "subtitle": "We're the partner you can trust",
+                    "solutionFilter": "slfReseller",
+                    "class": "slfhardware",
+                    "order": 2
+                },
+                "sf": {
+                    "icon": "icon-software",
+                    "menuName": "Software",
+                    "subtitle": "We're the partner you can trust",
+                    "solutionFilter": "slfManagement",
+                    "class": "slfsw",
+                    "order": 3
+                },
+                "sy": {
+                    "icon": "icon-security",
+                    "menuName": "Security",
+                    "subtitle": "We're the partner you can trust",
+                    "solutionFilter": "slfDeployment",
+                    "class": "slfsecurity",
+                    "order": 4
+                }
+            },
+            "SubSubMenu": {
+                "cms": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Cloud Migration Services",
+                    "href": "email-migration.html",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfcloudsolution"
+                },
+                "csy": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Cloud Security",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfcloudsolution"
+                },
+                "svc": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "System Virtualization & Consolidation",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfcloudsolution"
+                },
+                "budr": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Backup & DR",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfcloudsolution"
+                },
+                "sct": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Consulting",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfsw"
+                },            
+                "dp": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Software Development",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfsw"
+                },
+                "ssam": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Software Asset Management",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfsw"
+                },
+                "sar": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Authorized Reseller",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfsw"
+                },
+                "ssi": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Server & Storage Infrastructure",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfhardware"
+                },
+                "sam": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Networking",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfhardware"
+                },
+                "ar": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Hardware Consolidation/Refresh",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfhardware"
+                },
+                "ct": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Gateway & Network Security",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfsecurity"
+                },
+                "seps": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "server & End Point Security",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfsecurity"
+                },
+                "ey": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Encryption",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfsecurity"
+                },
+                "ms": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "MDM/MAM",
+                    "href": "javascript:void(0)",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "slfsecurity"
+                }
+            }
+        },
+        "Services": {
+            "subtitle": "We're the partner you can trust",
+            "subMenus": {
+                "sm": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Managed Services",
+                    "subtitle": "We're the partner you can trust",
+                    "ServicesFilter": "ssfConsulting",
+                    "class": "ssfmanagedservices" 
+                },
+                "fms": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "FMS",
+                    "subtitle": "We're the partner you can trust",
+                    "ServicesFilter": "ssfManagement",
+                    "href": ""
+                },
+                "bkup": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Backup/DR",
+                    "subtitle": "We're the partner you can trust",
+                    "ServicesFilter": "ssfConsulting",
+                    "href": ""
+                },            
+                "t": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Training",
+                    "subtitle": "We're the partner you can trust",
+                    "ServicesFilter": "ssfTraining",
+                    "href": ""
+                },
+                "am": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Asset Management",
+                    "subtitle": "We're the partner you can trust",
+                    "ServicesFilter": "ssfDeployment",
+                    "href": ""
+                }
+            },
+            "SubSubMenu": {
+                "ct": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Full IT Management",
+                    "href": "",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "ssfmanagedservices"
+                },
+                "rts": {
+                    "icon": "fa fa-bitbucket",
+                    "menuName": "Remote Tech Support",
+                    "href": "",
+                    "subtitle": "We're the partner you can trust",
+                    "subMenusFilter": "ssfmanagedservices"
+                }
+            }
+        }
+    }
+]

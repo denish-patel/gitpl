@@ -1,0 +1,113 @@
+/*******************/
+/*Banner*/
+/**********************/
+#businessChallenges {position: relative; }
+#businessChallenges h2{padding-bottom: 5px;border-bottom: 1px solid #282B2F;font-size: 20px;font-weight: 600;width: 100%;}
+#cl_businessChallenges.businessChallenges{position: relative;background-color:#eee;}
+#cl_businessChallenges.businessChallenges .carousel-inner  {width:100%;position: relative}
+/*#cl_businessChallenges.businessChallenges .carousel-item {height:20vh;min-height: 300px;background: no-repeat center center scroll;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; background-size: cover;}*/
+#cl_businessChallenges.businessChallenges .carousel-inner .overlay {display:none;}
+#cl_businessChallenges.businessChallenges .carousel-item img{-webkit-filter: blur(0);filter: blur(0);	-webkit-transition: .3s ease-in-out;transition: .3s ease-in-out;}
+#cl_businessChallenges.businessChallenges .carousel-inner:hover .carousel-item img{-webkit-filter: blur(3px);filter: blur(3px);}
+#cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay{display:block;position: absolute;top:0;width: 100%;height: 100%;z-index: 2;background-color:rgba(80, 79, 80, 0.5);}
+#cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle{position: absolute !important;padding: 15px;margin: 0px auto;left: 0;right: 0;text-align: center;}
+#cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle h3{font-weight: 600;color: #ffffff;z-index: 2;position: relative;}
+
+
+#contentSection .card-columns.bc-cards .card-no-border .card {border: 0px;border-radius: 0px;-webkit-box-shadow: none;box-shadow: none; }
+#contentSection .card-columns.bc-cards .card-no-border .shadow-none {-webkit-box-shadow: none;box-shadow: none; }
+#contentSection .card-columns.bc-cards .card-outline-danger,
+#contentSection .card-columns.bc-cards .card-outline-info,
+#contentSection .card-columns.bc-cards .card-outline-warning,
+#contentSection .card-columns.bc-cards .card-outline-success,
+#contentSection .card-columns.bc-cards .card-outline-primary {background: #ffffff; }
+#contentSection .card-columns.bc-cards .card-fullscreen {position: fixed;top: 0px;left: 0px;width: 100%;height: 100%;z-index: 9999;overflow: auto;}
+
+#contentSection .card-columns.bc-cards {margin-top:20px;margin-bottom: 20px;}
+#contentSection .card-columns.bc-cards .card {overflow: hidden;position: relative}
+#contentSection .card-columns.bc-cards .card a .card-imgs {display: block;position: relative; -webkit-transition: all 0.4s ease-in; transition: all 0.4s ease-in;}
+#contentSection .card-columns.bc-cards .card a:hover .card-imgs{filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');filter: blur(3px);-webkit-filter: blur(3px);-webkit-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+#contentSection .card-columns.bc-cards .card {margin-bottom: 1.3rem !important;-webkit-box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);-ms-box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);-moz-box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);-o-box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);box-shadow: 0 10px 40px 0 rgba(62, 57, 107, 0.07), 0 2px 9px 0 rgba(62, 57, 107, 0.06);}
+#contentSection .card-columns.bc-cards .card .card-title {font-size: 17px;font-weight: 500;}
+#contentSection .card-columns.bc-cards .card .card-text {font-size: 14px;font-weight: 400;color: #858585;}
+#contentSection .card-columns.bc-cards .card .card-text small {font-size: 11px;font-weight: 400;color: #a0a0a0;}
+
+
+@media (max-width: 319.98px) { 
+    #cl_businessChallenges.businessChallenges .carousel-inner img.deskImg, #staticBanner .deskImg{display: none;}
+    #cl_businessChallenges.businessChallenges .carousel-inner img.mobImg, #staticBanner .mobImg{display: block;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle{bottom:52px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle h3{font-size: 1.2em;margin-bottom: 3px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle a.btn{padding: 3px 6px;font-size: 11px;}
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 320px ) and (max-width: 575.98px) { 
+    #cl_businessChallenges.businessChallenges .carousel-inner img.deskImg, #staticBanner .deskImg{display: none;}
+    #cl_businessChallenges.businessChallenges .carousel-inner img.mobImg, #staticBanner .mobImg{display: block;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle{bottom:52px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle h3{font-size: 1.2em;margin-bottom: 3px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle a.btn{padding: 3px 6px;font-size: 11px;}
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #cl_businessChallenges.businessChallenges .carousel-inner img.deskImg, #staticBanner .deskImg{display: block;}
+    #cl_businessChallenges.businessChallenges .carousel-inner img.mobImg, #staticBanner .mobImg{display: none;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle{bottom:52px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle h3{font-size: 1.2em;margin-bottom: 3px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle a.btn{padding: 3px 6px;font-size: 11px;}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #cl_businessChallenges.businessChallenges .carousel-inner img.deskImg, #staticBanner .deskImg{display: block;}
+    #cl_businessChallenges.businessChallenges .carousel-inner img.mobImg, #staticBanner .mobImg{display: none;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle{bottom:52px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle h3{font-size: 1.2em;margin-bottom: 3px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle a.btn{padding: 3px 6px;font-size: 11px;}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #cl_businessChallenges.businessChallenges .carousel-inner img.deskImg, #staticBanner .deskImg{display: block;}
+    #cl_businessChallenges.businessChallenges .carousel-inner img.mobImg, #staticBanner .mobImg{display: none;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle{bottom: 68px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle h3{font-size: 2.0em;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle a.btn{padding: 0.375rem .75rem;font-size: 1rem;}
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #cl_businessChallenges.businessChallenges .carousel-inner img.deskImg, #staticBanner .deskImg{display: block;}
+    #cl_businessChallenges.businessChallenges .carousel-inner img.mobImg, #staticBanner .mobImg{display: none;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle{bottom: 88px;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle h3{font-size: 2.2em;}
+    #cl_businessChallenges.businessChallenges .carousel-inner:hover .overlay .bannerTitle a.btn{padding: 0.375rem .75rem;font-size: 1rem;}
+}
+
+
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 2;
+    }
+}

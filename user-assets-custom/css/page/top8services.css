@@ -1,0 +1,16 @@
+/*******************/
+/*Top 8 Services*/
+/*******************/
+#servicesSection #servicesSectionContent {padding:10px 30px;}
+#servicesSection #servicesSectionContent .servicesSectionBlock {padding:30px;text-align: center}
+#servicesSection #servicesSectionContent .servicesSectionBlock h1 {line-height:24px;font-size: 20px;font-weight: 600;text-transform: uppercase;letter-spacing: 0.2px;}
+#servicesSection #servicesSectionContent .servicesSectionBlock img {width:38%;padding:10px}
+
+#servicesSection #servicesSectionContent-2 {padding:30px 30px 0px 30px;}
+#servicesSection #servicesSectionContent-2 .servicesSectionBlock-2 a:hover h1, 
+#servicesSection #servicesSectionContent-2 .servicesSectionBlock-2 a:hover p{color:#FF6C3A; }
+#servicesSection #servicesSectionContent-2 .servicesSectionBlock-2 {margin-bottom: 15px;margin-top: 15px;min-height: 125px;}
+#servicesSection #servicesSectionContent-2 .servicesSectionBlock-2 h1 {font-size: 18px;text-transform: uppercase;overflow: hidden;min-height: 28px;font-weight: 600;line-height:21px;vertical-align: middle;color:#212121;}
+#servicesSection #servicesSectionContent-2 .servicesSectionBlock-2 p {color:#898989;font-weight:400} /*#747474*/
+/*#servicesSection #servicesSectionContent-2 .servicesSectionBlock-2 h1:hover{color:#f8542f;cursor: pointer;}*/
+#servicesSection #servicesSectionContent-2 .servicesSectionBlock-2 img {width: 90px;float: left;margin: 5px 20px 40px 0;}

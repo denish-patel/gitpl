@@ -1,0 +1,63 @@
+/*******************
+Careers page
+*******************/
+#contentSection .mainContent .largeHeading{font-family:'M PLUS Rounded 1c',sans-serif;color: #414042;font-size:2.4rem;line-height: 1.4;margin: 0;padding-bottom: 36px;padding-top: 12px;letter-spacing: -0.2px;text-align: center;}
+#careerssection,#job-description {margin:20px 0px;padding:20px 0px;}
+#careerssection a{margin-bottom:10px;}
+#careerssection .job-openings {display: block;border-top: 2px solid #e9e9e9;padding: 20px 0 45px;background: #ffffff;cursor: pointer;margin-bottom: 0;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;transition: all 0.8s ease;height: 241px;}
+#careerssection .job-openings span {display: block; margin: 0 13px;}
+#careerssection .job-openings .category {color: #979797;font-size: 0.875rem;font-weight: 400;}
+#careerssection .job-openings .position {color: #414042;font-size: 1.6rem;font-weight: 400;}
+#careerssection .job-openings .location {color: #414042;font-size: 0.9rem;}
+/*#careerssection a:hover .job-openings .category,#careerssection a:hover .job-openings .location {color: #eee;text-decoration: none;}*/
+/*#careerssection a:hover .job-openings .position {color: #fff;text-decoration: none;}*/
+#careerssection .job-openings:hover {background: #faca04;border-top: 2px solid #faca04;-webkit-transition: all 0.8s ease;-moz-transition: all 0.8s ease;transition: all 0.8s ease;}
+
+
+#careerssection .job-application{margin-bottom: 10px;}
+#careerssection .job-application span {display: block;color: #414042;text-align: left;}
+#careerssection .show-desktop {display: block !important;}
+#careerssection .show-desktop .job-apply-btn {margin-top: 30px;font-size: 1.125rem;color: #414042;background: #f8df2f;display: block;padding: 12px 0;text-align: center;border: 1px solid #f8df2f;}
+#careerssection .job-application .group{font-family:'M PLUS Rounded 1c',sans-serif;font-size: 0.875rem;letter-spacing: 1px;}
+#careerssection .job-application .location{font-family:'M PLUS Rounded 1c',sans-serif;font-size: 1.25rem;}   
+
+#job-description .job-block{margin-bottom: 30px;}
+#job-description .job-block h5 {font-size: 1.5rem;color: #414042; border-bottom: 1px solid #bfbfbf;padding-bottom: 15px;margin-bottom: 20px;}
+#job-description p {color: #787878;font-size: 1.25rem;}
+#job-description ul li {margin-left: 5px;padding-left: 15px;list-style-position: outside;list-style-image: url(../../images/list-icon.png);font-size: 1.25rem;color: #787878;margin-bottom: 5px;}
+
+#job-form .col-md-6 {margin-bottom:10px;}
+#job-form p.sub_title {color: #414042;font-size: 2rem;line-height: 1.4;margin: 0;padding-bottom: 36px;padding-top: 12px;letter-spacing: -0.2px;text-align: center;}
+#job-form .wpcf7-form-control-wrap {position: relative;width:50%;}
+#job-form .wpcf7-form-control-wrap input, #job-form .wpcf7-form-control-wrap textarea {margin-bottom:10px;width:100%;background: transparent !important;border: 1px transparent !important; box-shadow: none !important;border-bottom: 1px solid !important;letter-spacing: 1.5px !important;padding-bottom: 0.8rem !important;margin-top: 0.5rem !important;}
+#job-form input.submit-button {font-weight:500; float:right; border: 1px solid #888888 !important;padding: 0.8rem 2.5rem !important;color: #888888;border-radius: 4px;background-color: transparent}
+#job-form input.submit-button:hover {border-color:#1786d7 !important;color:#1786d7;}
+
+@media (max-width: 319.98px) { 
+    #careerssection .job-application .title{font-family:'M PLUS Rounded 1c',sans-serif;font-size: 1.9rem;}
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 320px ) and (max-width: 575.98px) { 
+    #careerssection .job-application .title{font-family:'M PLUS Rounded 1c',sans-serif;font-size: 2.1rem;}
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #careerssection .job-application .title{font-family:'M PLUS Rounded 1c',sans-serif;font-size: 2.1rem;}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #careerssection .job-application .title{font-family:'M PLUS Rounded 1c',sans-serif;font-size: 2.3rem;}
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #careerssection .job-application .title{font-family:'M PLUS Rounded 1c',sans-serif;font-size: 2.4rem;}
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #careerssection .job-application .title{font-family:'M PLUS Rounded 1c',sans-serif;font-size: 2.6rem;}
+}

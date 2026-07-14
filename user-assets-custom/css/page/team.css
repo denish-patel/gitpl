@@ -1,0 +1,45 @@
+/**********************/
+/*About Page*/
+/**********************/
+.team-listing .team-listing_photo__wrap {position: relative;z-index: 10;margin: 0 0 41px;overflow: hidden;}
+.team-listing .team-listing_photo {padding: 0;}
+.team-listing_photo {text-align: center;}
+.team-listing .team-listing_photo img {vertical-align: top;display: block;border-radius: 2px;overflow: hidden;width:100%}
+.team-listing_photo img {margin: 0 auto;}
+.team-listing .team-listing_photo__wrap:hover .team-listing_photo__overflow, .team-listing .team-listing_photo__wrap:hover a {-webkit-transform: translateY(0);-ms-transform: translateY(0);transform: translateY(0);opacity: 1;}
+
+.team-listing .team-listing_photo__overflow {position: absolute;width: 100%;height: 100%;top: 0;left: 0;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;align-items: center;padding: 20px;opacity: 0;-webkit-transform: translateY(100px);-ms-transform: translateY(100px);transform: translateY(100px);-webkit-transition: .3s all;-o-transition: .3s all;transition: .3s all;}
+.team-listing .team-listing_photo__overflow {background-color: rgba(37,9,81,0.85);}
+.team-socials {margin-left: -15px;margin-right: -15px;padding: 11px 0 0 0;}
+.team-socials .team-socials_item {margin-top: 0;margin-bottom: 5px;}
+.team-listing .team-listing_photo__overflow a {-webkit-transform: translateY(100px);-ms-transform: translateY(100px);transform: translateY(100px);-webkit-transition: .3s all;-o-transition: .3s all;transition: .3s all;-webkit-transition-delay: 50ms;-o-transition-delay: 50ms;transition-delay: 50ms;opacity: 0;}
+.team-socials_icon {font-size: 14px;}
+
+@media (max-width: 319.98px) { 
+    
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 320px ) and (max-width: 575.98px) { 
+    
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+}

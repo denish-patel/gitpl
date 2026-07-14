@@ -1,0 +1,195 @@
+<li class="nav-item dropdown">
+    <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="javascript:void(0)" id="navbarDropdownS" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Solution
+        <h5 class="subtext text-uppercase m-0">Provide Solution</h5>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownS">
+        <div class="container custom-ribbon menuFilter-hs">
+            <div class='col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto p-0'>
+                <ul class="navbar-nav row " >
+                    <li data-ng-repeat="mlsf in mlSolutionFilter" class="nav-item col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 filter-button {{mlsf.class}}" data-ng-click="filterClick(mlsf.class)" >
+                        <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                            <i class="{{mlsf.icon}}"></i>                                                        
+                            <span class="pull-right m-0">{{mlsf.menuName}}</span>
+                        </a>
+                    </li>                                   
+                </ul>
+            </div>
+        </div>                        
+        <!--<div class="container"><hr></div>-->
+        <div class="container mega-dropdown m-b-10 sub-menu-hs">                            
+            <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+                <ul class="navbar-nav row ">
+                    <li data-ng-repeat="mlslm in mlSolutionMenus" class="nav-item col-sm filter {{mlslm.solutionFilter}} sub-filter {{mlslm.class}}" data-ng-click="subfilterClick(mlslm.class)">
+                        <a href="javascript:void(0)" class="nav-link text-uppercase">
+                            <i class="{{mlslm.icon}}"></i>
+                            {{mlslm.menuName}}
+                            <span>{{mlslm.subtitle}}</span>
+                        </a>
+                    </li>                                   
+                </ul>
+            </div>
+        </div>
+        <!--Sub sub menu filter-->
+        <div class="container mega-dropdown m-b-10 sub-sub-menu-hs">                            
+            <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+                <ul class="navbar-nav row ">
+                    <li data-ng-repeat="mlsssm in mlSolutionSubMenus " class="nav-item col-sm subfilter {{mlsssm.subMenusFilter}}">
+                        <a href="{{mlsssm.href}}" class="nav-link text-uppercase">
+                            <i class="{{mlsssm.icon}}"></i>
+                            {{mlsssm.menuName}}
+                            <span>{{mlsssm.subtitle}}</span>
+                        </a>
+                    </li>                                  
+                </ul>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="nav-item dropdown">
+    <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="javascript:void(0)" id="navbarDropdownM" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Services
+        <h5 class="subtext text-uppercase m-0">Provide Services</h5>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownM">
+        <div class="container custom-ribbon">
+            <div class='col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto p-0'>
+                <ul class="navbar-nav row">
+                    <li data-ng-repeat="mlssf in mlServicesFilter"  class="nav-item col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 filter-button {{mlssf.class}}" data-ng-click="filterClick(mlssf.class)">
+                        <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                            <i class="{{mlssf.icon}}"></i>
+                            <span class="pull-right m-0">{{mlssf.menuName}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>                        
+        <!--<div class="container"><hr></div>-->
+        <div class="container mega-dropdown m-b-10 sub-menu-hs">
+            <ul class="navbar-nav row">
+                <li data-ng-repeat="(key,mlssmf) in mlServicesMenus" class="nav-item col-sm filter {{mlssmf.ServicesFilter}} sub-filter {{mlssmf.class}}" data-ng-click="subfilterClick(mlssmf.class)">
+                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                        <i class="{{mlssmf.icon}}"></i>
+                        {{mlssmf.menuName}}
+                        <span>{{mlssmf.subtitle}}</span>
+                    </a>                                    
+                </li>
+            </ul>                        
+        </div>
+        <!--Sub sub menu filter-->
+        <div class="container mega-dropdown m-b-10 sub-sub-menu-hs">                            
+            <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+                <ul class="navbar-nav row ">
+                    <li data-ng-repeat="mlsssm in mlServicesSubMenus" class="nav-item col-sm subfilter {{mlsssm.subMenusFilter}}">
+                        <a  href="{{mlsssm.href}}" class="nav-link text-uppercase">
+                            <i class="{{mlsssm.icon}}"></i>
+                            {{mlsssm.menuName}}
+                            <span>{{mlsssm.subtitle}}</span>
+                        </a>
+                    </li>                                  
+                </ul>
+            </div>
+        </div>
+    </div>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="#">
+        Contact
+        <h5 class="subtext text-uppercase m-0">provide solution</h5>
+    </a>
+</li>
+
+
+
+
+ICON LIST
+1) cxo dashboard icon
+    https://www.csscorp.com/wp-content/uploads/2017/03/CXO-Dashboard.jpg
+
+2) consulting software icon
+    https://thumbs.dreamstime.com/b/client-consultant-agent-consulting-icon-vector-image-can-also-be-used-software-development-suitable-mobile-apps-web-apps-79911578.jpg
+
+3) AI icon
+    https://cdn5.vectorstock.com/i/1000x1000/21/64/artificial-intelligence-icon-human-ai-vector-20732164.jpg
+
+4) Backup / Disaster Recovery icon
+    data:image/png;base64,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
+    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2Sg_l0ZH6lBlV6AE2E-bmVSZfQVmulcccygbJxOhbSDu9VLU1g
+
+5) Migration icon
+    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAmVBMVEX///9mZmb6rzTl6O3Z2dmysrKGh4imp6rFyMuMjIxwcHD19fXi4uLs7Ox5eXmDg4OgoKDPz8+WlpZva2O8vLzFxcWLeFqegVOCdF3xqjf+68zVnUHDlEfopjreoT2UfVZ5b2Cwi025j0qnhlD915rMmET/+vL94bP8yHP+9eb93Kb7vlr95sD6tEH80o38zYD7uU37w2f+8NnuuHaIAAAKzklEQVR4nO1d6XqbOhANNosBs4OXOrGT+Drpfpf3f7irkQTIWIAQAuN+nF9t48g6zKqZEX16mjFjxowZM2bMmDFjxowZM2bMmDEAPD0yjFTX772PXvDS2NFyBNb63vuRRGZrFfjZvfckAd2nu7dtw4ht/0GpuDFRp7RQJy8j/2R799xXV6yxAMLKnj0DLMZ5IKGsnZpH74ZA0Bh/R3LAPFL+z3T4WTjufmThob06tXHDDR6FCezUaQgZmMkj2InVtk/MZPrBUW+3Zhf5tGCc3fSALbDJ9QO4rkxIbQxkRuCdvTREgT9zh99XZwRiLsmHj+l5MuYYk6MCSiOSg4DgQjadnJrxo83FQh+kSaRt6JkFf25y2PcAioWR0AcznFPS3acOtZnJAGmWI/ZJF+09LiwDkhp7qE3JIBXVLIibAWPhEZLPlE7DoXR8iMUfwRiwpZ+rqLsbCfJEIABNKJP05YmgXNPi/LObWXZAw6YdG9FIUgvkiUR8vxXfVGJCMf/eBy7EA1kiOn+TfpUIiCYcNHq6IS7GyRLx+PWidV7ie31+Obyfd3mNaTh7SskXBtLpn0FNwa8+irVFxJK8LRaL/WWb8D+mBqQ84hu9bNGNSB55a/R6SKWyAFxOg1XI8OlVRcHKNfAWb8VKamLa5oipvGyxrdRUanoADhaxmjOFB8+E579cQuVtQaicahj3gqG0whNytQvBwwq2eyFUDq/Ks/+14kpVWOv8cGU8ORAme9AvR2VUEak3dEJQu6ALxSaN2Pxi8Qx/UeeIPeUpOKxY96QjsJQzZXJMVDKx1B+KwgY7xpX+LctElXYNkLeC1S3rfoh9PctElcWjZZVXc9BTX9Uuipk8M0x8Jd+Psj1fxTpXQLpl1e8OM6G+a3HQFB0u9SHqBigyWbW6RZgkNJ4s3rXabkwndCg4iCNDT2fZoDBQdtlQIouTmmKSMURBGonZbCKCyy7vlMg+UfIs0yEaUFEbEXD6hXJdlESyoWwkXDaqCzRZTrlybdg9rENHStMG8VpQilg2WPsTUa7ccx1LkZB5CyllHyKOoN2kLUTgM4W9b4lIXIOe8aVC5ACR3YUn3EYEyhVHSuQFNq8XjQrBAnQFlnr/i7yvv2w29icski1jJaRokGxPst5ngGqnj02kjQiIZM84Lnyq3y920hpiq/Zb0GJcthMBvnnKtYDz4ulAtUzSZnWlxxsiYiSQFhN5woQLD3zYnF/yjEX6mBcrPTxD+hEgHu3q6jG6VeDUI/OC9pMyJhksFoloFu70XapEZJ0vBjxENXNYXqxRHq2aRYLGW4XHpV98xpNNcW/fRUqNhEeLQNY0aFQlsu2Z+mEmWmh0R6YTRAatV5vLdh5ZQIPGS4UHeK9+Z3j3ZqZUDsGqlQctn2qv7zeWjrOuXjwQMl4voxucmNBo5EF16nS4YUGcb/80Y2lYErBNitCgLJp56JjG+UanCDZKjr1LRWj8Ehfr1Y4rj8VeU5MuuSpotMUP0nrQNjwqz8oOR32pCGVJpCyvbW7Va1tTyJ8sPNLtvfG+ybQmQURAp9a2Vx74KHumuisIleSNoXKe1kSLMEjkSsp0S/5MdW8QKrTb2+dMdX+QdIVQeX6EeeJa0G4vhJXT9MeJG0Eai4hKon5UfW03tDfUw8srWsqdrz32KK9HworqcjoZ9RlXX3FYUT3LRZRW+YRFC/RYeZ6FvPsZT1gMP+02KCIUbvd4wuLBctEqQlJdfoZufjCxofcugKYAPvW8wOTeAFNVYyFDKQPN4t5AvRRNco2PgKn/QbTtPX/opVAA0/WRtRSCSHly25+6hJQUF94c27ah1hfpcA+eZiA0dOOfRKPcj7eY3h7gHdu8SG3DDTpVwWw7xoXKoaazHab9Qg6gO8GQUlus9JF4LNuurwAGcNlcsfJBEKmUBPZnnAe12Txu8OjL5TJarVaWZYW5gJgMaq3raMe2XS8737YtJcoXMy3KAheRkGLkBWygYZvF86+pVHm6nsGd//qiswPKl0pqHgSR4w2RxcsGVm4OKXgkaGne7KfdU7hQzDdC23ZuflmTzS7SMohc4w3WbEwjMZEVuwXTDBtvcmR2rkflY8fKd21QUsl9UE7tVHDEaWSD6hZE0P4tY4XbPSCg2l8xqsYRX9dQkPKluK0lUVoBg60plNOQUi/onIjJ1lCbiHAUiaOGsVQ92GI6xjXqVSvozkRg4+DeTNPMOXHOulC+7+6Wb4IIY+/v5PZH7XBBZyJIjY3yk8hpa9wP2xK6ld0GkWsWTU64M5EUBgYZQA+Iv27nU3dcTknzWTR59c5E8HgwA4MvbgkiHi+IHIVYyBCBI3V6/VlepJIggmS9u5EHvX/THmGrRFCiEjUToeWsAFl7jIxe4/fdJIj4vCCCXFUg9BKBkkho0vhuNhNZV70v1892JwLr4m7F/nm7OTNExJKEkkiRprQQKV9SQMH1Tt2JhDiIHOglu9xYLqLjXFUivmlaLUQoHR1COOTxdet2JIKCyOlUPJ08nhxEI2tJRF+thIxdDJ2JZKWIg4Dxw5pg+6W71xJDZyL0Xq0fItOOmPPuTnAvkyECzjCmrwaDiJIT2QouNBkibsR8pV+OUr0LWvtkiFwhZK508VMg3hdOkEjEnBQTscbFNImwZ3fB8bySSJyPPtn3J8JWUy5izb2CCHOEXd2fCG6SdNKtgog1KSLswPdWaEaEJRJC2hFMg4hRmvuxJsG++YWCCP5mexpEXCbf2omYuzSRn3/9bFm3X4M5LEXyLCISKdX6+Pz7F/qCX18/PxrW7UcE0pT8nPUqIJLuxv7t8ytzgvv3+7e6dXu2/I3ScYFI2opL3Yn8ZHksFj++163bkwiUxvJy3a494WKJvG4QknbV+ihk8vWTLw8lVz6j0t7hbnBLf5clgpuQmxYi//yGvQMXYiHfvv/4wl+39zQJCu/JsYglLfccOxPB2pTL4ePzB/r7UERAuXbETOBGbfN7bGSIUC6Fhg1FBE+yn0rlavRcnW0kN/K/nr7kfxyMCO5h0OTxTWtesbPXGpUIPgBTJqe6ytNDEHkq3zWx3zUyYYlsDwi7aREhb83YtzORNPbRiBAm5JU/mEmdxU+eCHn7VnIpmNT0dlkim8vhcJwcETrkeN7nTPi93akbOwZ+5U+C0xUyIsgRSucz+z2I0MFcfDUKjwhyLpKWVRQDd2p9mPSaHJH8dXu757wZ51frEZ3rWr//qRD59Zt3ulL+whPyxj0tOR/JDFf1XYYSBbov+HhIiXytOfAO8OaWfIY92dI+r8O+YlKu0ojSRSDy4/twR10ePKs6d1FOpMmWTD9Q9vtfw88HIYKQxddcioPjNGu/jdANZrKqt0TaMCARjDW+/c1UJEoiK6toIj4AEd4XUiKk6WyalvHgRIT77KLr3ouIEdPRzEcngqGvUmv1JxD5E4x9JlK37kxE9gtnIk2w1d9PbEYxie0zrxbpTwT6TeP+tw2V2XjHDK1V41FXCG79a5CHAiISL5fxzXUXSSJ4Mp6k2SPf69ShTgTqFKUWe9OlyzY4dxXucKsTyibYNlYoO7FM0X003x65x0VInbsR/nuJhe7zhHCZbHQaT1dTkSyKG5kj3rDqCfoesyDfjks6RU4ctt55S0e/cNkVIX/3Q99CHABpIYsx74UOAhQQJq84M2bMmDFjxowZM2bMmDFjxowZfyT+B6UDlCX4kzgfAAAAAElFTkSuQmCC
+
+6) infrastructure mgt service
+    https://www.itsmcorp.com/wp-content/uploads/2015/01/KD_ITSM_Website-Icon_IMS_Purple.png
+
+7) Data center infrastructure icon
+    https://evoswitch.com/wp-content/uploads/2016/07/Icon__Colocation.png
+    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz-WUZr0AIZ2OAxRMl0-YE9Tg9XVxUe9R2K3GScGNkd0Xns-9Dtw
+
+8) Data Loss Prevention icon
+    https://www.tatacommunications.com/wp-content/uploads/2017/06/managed-data-leak-prevention.png
+
+
+
+<!--Sub menu filter-->
+    <div class="container mega-dropdown m-b-10 sub-menu-hs">                            
+        <div class='col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12 m-auto'>
+            <ul class="navbar-nav row ">
+                <li data-ng-repeat="mlslm in mlSolutionMenus" class="nav-item col-sm filter {{mlslm.solutionFilter}} sub-filter {{mlslm.class}}" data-ng-click="subfilterClick(mlslm.class)">
+                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                        <i class="{{mlslm.icon}}"></i>
+                        {{mlslm.menuName}}
+                        <span>{{mlslm.subtitle}}</span>
+                    </a>
+                </li>                                   
+            </ul>
+        </div>
+    </div>
+    <!--Sub sub menu filter-->
+    <div class="container mega-dropdown m-b-10 sub-sub-menu-hs">                            
+        <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+            <ul class="navbar-nav row ">
+                <li data-ng-repeat="mlsssm in mlSolutionSubMenus " class="nav-item col-sm subfilter {{mlsssm.subMenusFilter}}">
+                    <a href="{{mlsssm.href}}" class="nav-link text-uppercase">
+                        <i class="{{mlsssm.icon}}"></i>
+                        {{mlsssm.menuName}}
+                        <span>{{mlsssm.subtitle}}</span>
+                    </a>
+                </li>                                  
+            </ul>
+        </div>
+    </div>
+
+
+
+
+<!--Sub menu filter-->
+    <div class="container mega-dropdown m-b-10 sub-menu-hs">
+        <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+            <ul class="navbar-nav row">
+                <li data-ng-repeat="(key,mlssmf) in mlServicesMenus" class="nav-item col-sm filter {{mlssmf.ServicesFilter}} sub-filter {{mlssmf.class}}" data-ng-click="subfilterClick(mlssmf.class)">
+                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                        <i class="{{mlssmf.icon}}"></i>
+                        {{mlssmf.menuName}}
+                        <span>{{mlssmf.subtitle}}</span>
+                    </a>                                    
+                </li>
+            </ul> 
+        </div>
+    </div>
+    <!--Sub sub menu filter-->
+    <div class="container mega-dropdown m-b-10 sub-sub-menu-hs">                            
+        <div class='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto'>
+            <ul class="navbar-nav row ">
+                <li data-ng-repeat="mlsssm in mlServicesSubMenus" class="nav-item col-sm subfilter {{mlsssm.subMenusFilter}}">
+                    <a  href="{{mlsssm.href}}" class="nav-link text-uppercase">
+                        <i class="{{mlsssm.icon}}"></i>
+                        {{mlsssm.menuName}}
+                        <span>{{mlsssm.subtitle}}</span>
+                    </a>
+                </li>                                  
+            </ul>
+        </div>
+    </div>

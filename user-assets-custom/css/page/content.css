@@ -1,0 +1,52 @@
+/***************************************************************************************************************************/
+/****************MAIN CONTENT**********************/
+/***************************************************************************************************************************/
+
+/*mail migration page*/
+#contentSection .mainContent #mainContentTab.nav-tabs{border:none !important;padding:15px 0px 20px 0;}
+#contentSection .mainContent #mainContentTab.nav-tabs li h6{font-size:11px;font-weight:500;color:#908f8f}
+#contentSection .mainContent #mainContentTab.nav-tabs li i{font-size:60px;display: block;color:#c4c4c4;}
+#contentSection .mainContent #mainContentTab.nav-tabs li a{text-transform: uppercase;text-align: center;font-size: 16px;font-weight: 600;}
+#contentSection .mainContent #mainContentTab.nav-tabs li a:hover,
+#contentSection .mainContent #mainContentTab.nav-tabs li a:hover i{color:#ec5e17;}
+#contentSection .mainContent #mainContentTab.nav-tabs li a:hover h6{color:#696969;}
+#contentSection .mainContent .tab-content .vidImg{min-width: 100%;padding:15px 0px 30px 0px;text-align: center;}
+#contentSection .mainContent .tab-content .vidImg > img{width:70%;}
+
+
+#contentSection .mainContent .list-display{margin-bottom:20px;}
+#contentSection .mainContent .list-display li{font-size: 15px;color: #7b7b7b;}
+
+
+
+/***************************************************************************************************************************/
+/****************SIDE BAR CONTENT**********************/
+/***************************************************************************************************************************/
+
+/*sidebar case study*/
+#contentSection .sideBarContent #caseStudy .caseStudy-block {background-image: url('https://uploads.gravitatedesign.com/2017/10/07214526/gxg-banner-1480x533.jpg');position: relative;min-height:400px;padding:20px;background-position:center;background-size:cover;background-repeat:no-repeat;height:100px;}
+#contentSection .sideBarContent #caseStudy .caseStudy-block span {color:#fff;font-size:12px;}
+#contentSection .sideBarContent #caseStudy .caseStudy-block h3 {color:#fff;font-size:20px;font-weight:600}
+#contentSection .sideBarContent #caseStudy .caseStudy-block p {display:none;float:right;color:#fff;font-size:13px;position:absolute;bottom:5px;font-weight:600;text-transform:uppercase;}
+#contentSection .sideBarContent #caseStudy .caseStudy-block:hover p {display:block; }
+#contentSection .sideBarContent #caseStudy .caseStudy-block:hover .caseStudy-overlay {position:absolute;top:0px;left:0px;width:100%;height:100%;filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FF0B333C');background-image: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #0b333c 100%);background-image: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, #0b333c 100%);background-image: -o-linear-gradient(top, rgba(255,255,255,0) 0%, #0b333c 100%); background-image: linear-gradient(top, rgba(255,255,255,0) 0%, #0b333c 100%);}
+
+/*sidebar quick links */
+#contentSection .sideBarContent #quickLinks .list-group{padding:5px 5px;}
+#contentSection .sideBarContent #quickLinks .list-group-item{position: relative;display: block;padding: 2px 3px;margin-bottom: 2px;background-color: #fff;border: none;}
+#contentSection .sideBarContent #quickLinks .quickLinks-block a{color:#848484;}
+/*#contentSection .sideBarContent #quickLinks .quickLinks-block a::before{content:"> ";position: absolute;left: 0px;top: 1px;right: 0px;}*/
+#contentSection .sideBarContent #quickLinks .quickLinks-block h5{font-size: 13.5px;margin-bottom: 2px;color: #DA4227;}
+#contentSection .sideBarContent #quickLinks .quickLinks-block p{font-size: 11px;font-weight: 300 !important;margin-bottom: 2px;color: #656565;}
+#contentSection .sideBarContent #quickLinks .quickLinks-block a:hover h5{text-decoration: underline}
+
+/*sidebar Testimonial Bar*/
+#contentSection .sideBarContent #testimonialBar .quoteIcon i{font-size:55px;}
+#contentSection .sideBarContent #testimonialBar .quoteIcon,
+#contentSection .sideBarContent #testimonialBar .testimonialBarContent{text-align: center}
+#contentSection .sideBarContent #testimonialBar .testimonialBarContent p{font-size:14px;}
+#contentSection .sideBarContent #testimonialBar .testimonialBarContent img{min-width:100px;margin:15px 0px;}
+
+/*sidebar query form*/
+#contentSection .sideBarContent #queryBlock strong{font-size: 16px;font-weight: 500;color: #ff6c3a;}
+#contentSection .sideBarContent #queryBlock p{font-size: 13px;margin-top:5px;}

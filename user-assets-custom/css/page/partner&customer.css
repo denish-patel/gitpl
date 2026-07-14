@@ -1,0 +1,16 @@
+/*******************/
+/*Partner & customer*/
+/**********************/
+/*#customerSection .container-fluid{padding:30px 0px 10px 0px;}*/
+#customerSection #customerSectionOwlDemo{margin-top:10px;}
+#customerSection #customerSectionOwlDemo img{width:123px}
+#customerSection #customerSectionOwlDemo .iconbox.vertical {text-align: center;padding: 5px 12px;}
+#customerSection #customerSectionOwlDemo .iconbox.vertical img {margin: 5px 0px;transition: all .2s ease-in-out;}
+#customerSection #customerSectionOwlDemo .iconbox.vertical img:hover {transform: scale(1.1);}
+
+/*#partnerSection .container-fluid{padding:10px 0px 30px 0px;}*/
+#partnerSection #partnerSectionOwlDemo{margin-top:10px;}
+#partnerSection #partnerSectionOwlDemo img{width:149px}
+#partnerSection #partnerSectionOwlDemo .iconbox.vertical{text-align: center;padding: 5px 12px;}
+#partnerSection #partnerSectionOwlDemo .iconbox.vertical img{margin: 5px 0px;transition: all .2s ease-in-out;}
+#partnerSection #partnerSectionOwlDemo .iconbox.vertical img:hover{transform: scale(1.1);}

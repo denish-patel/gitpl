@@ -1,0 +1,146 @@
+/*******************/
+/*Navbar*/
+/**********************/
+#gitplNavbar.sticky-top {position: fixed;top: 0;z-index: 1020;width: 100%;right: 0;left: 0;}
+
+#gitplNavbar.navbar {background-color:rgba(52, 52, 52,0);padding:0px 0px !important;}
+#gitplNavbar .navbar-header {width:auto;position: relative}
+#gitplNavbar .navbar-brand  {margin-left:15px;position: relative;display: inline;margin-right: 1rem;font-size: 3.15rem;padding: 1px 0px;white-space: nowrap;color: #fff;}
+#gitplNavbar .navbar-expand-lg .navbar-nav .nav-link {padding-right: .8rem;padding-left: .8rem;}
+#gitplNavbar .nav-link .subtext{color: #747474 !important;font-weight: 600;}
+#gitplNavbar .nav-link .subtext:hover{color: #6b6b6b !important;}
+/*#gitplNavbar .nav-item.active .nav-link {background-color: #FF6C3A;}*/
+#gitplNavbar.navbar .navbar-collapse .nav-link.main-nav-link:hover, #gitplNavbar.navbar .navbar-collapse .nav-link.main-nav-link:focus {color:#FF6C3A !important;}
+#gitplNavbar.navbar .navbar-collapse .nav-link.main-nav-link{color:#212121;}
+#gitplNavbar.navbar .navbar-toggler {margin-right: 15px;color: rgba(0,0,0,.5);border-color: transparent;}
+
+/*dropdown*/
+#gitplNavbar.navbar .dropdown {position:static;}
+#gitplNavbar.navbar .dropdown-menu {width:100%;left:0;right:0;border-radius:0px;margin:0px}  
+/*#gitplNavbar.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {display:block!important;}*/
+#gitplNavbar.navbar .dropdown-menu {padding:10px 20px; border: none;background-color:rgba(0,0,0,0.67)}
+#gitplNavbar.navbar .dropdown:hover>.dropdown-menu {display: block;}
+#gitplNavbar.navbar .dropdown>.dropdown-toggle:active {pointer-events: none;}
+
+/*mega dropdown*/
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown .container {background-color:#02bec9;}
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li{-webkit-animation: fadeIn 1s; animation: fadeIn 1s;}
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a{transition: all 0.4s ease 0s;text-align: center;color: rgba(255,255,255,1);font-size:16px;font-weight: 600;display: block;margin-bottom: 1px;}
+
+/*#gitplNavbar.navbar .dropdown-menu .mega-dropdown.sub-sub-menu-hs{display:none;}*/
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown.sub-sub-menu-hs .backtomenu-hs,
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown.sub-sub-menu-ps .backtomenu-ps{cursor: pointer;color:#fff;font-size:15px;position: absolute;z-index: 2}
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown.sub-sub-menu-hs .backtomenu-hs:hover,
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown.sub-sub-menu-ps .backtomenu-ps:hover{color: #ef7413;font-weight: 400;}
+
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a.nav-link{padding: 15px 15px;}
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a span {color: rgba(214, 214, 214, 0.7);font-size: 10px;font-weight: 700;display: block;}
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a i{margin-bottom: 7px;display: block; font-size: 3.0rem;color:#fff;}
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a:focus, #gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a:hover {color: #FF6C3A;}
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a:focus span, #gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a:hover span {color: #ffffff;}
+#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a:focus i,#gitplNavbar.navbar .dropdown-menu .mega-dropdown ul li a:hover i {color: #ff6c3a;}
+
+/*mobile dropdown*/
+#gitplNavbar.navbar .navbar-collapse.show .dropdown-menu {padding:10px 0px;background-color: #343a40 }
+#gitplNavbar.navbar .navbar-collapse.show ul li a {width:100%;}
+#gitplNavbar.navbar .navbar-collapse.show .dropdown-menu .mega-dropdown ul li a i {display: inline-block;float: left;margin-right: 10px;font-size: 26px;line-height: 35px;}
+#gitplNavbar.navbar .navbar-collapse.show .dropdown-menu .mega-dropdown ul li a span {font-size: 8px;line-height: 8px;}
+#gitplNavbar.navbar .navbar-collapse.show .dropdown-menu .mega-dropdown ul li a.nav-link {color: rgba(255,255,255,.75);text-align: left;font-weight: 600;padding: 10px 30px 10px 30px;font-size: 14px;}
+#gitplNavbar.navbar .navbar-collapse.show .dropdown-menu .mega-dropdown ul li a:focus, 
+#gitplNavbar.navbar .navbar-collapse.show .dropdown-menu .mega-dropdown ul li a:hover {color: #FF6C3A;}
+#gitplNavbar.navbar .navbar-collapse.show .dropdown-menu .mega-dropdown ul li a:focus span, 
+#gitplNavbar.navbar .navbar-collapse.show .dropdown-menu .mega-dropdown ul li a:hover span {color: #ffffff;}
+#gitplNavbar.navbar .navbar-collapse .index .custom-ribbon{margin:20px auto;}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon{margin:5px auto;}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a.nav-link.rib-content {display: inline-block; overflow: hidden; color:#fff;padding:15px 15px 15px 15px !important;width:100%}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a.nav-link.rib-content i {float:left;font-size: 33px;color: #fff;z-index:1;position: relative}
+/*#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a.nav-link.rib-content img {float:left;font-size: 33px;color: #fff;z-index:1;position: relative}*/
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a.nav-link.rib-content span {font-size: 16px;font-weight: 600;position: relative;top: 5px;}
+/*#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a.nav-link.rib-content:before {-webkit-transition: width 1.35s ease-in-out;transition: width 1.35s ease-in-out;content: "";display: block;background-color: #333;width: 140px;height: 90px;position: absolute;top: -3px;left: -29px;transform: rotate(42deg);}*/
+/*#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a.nav-link.rib-content:hover:before {background-color:#fff; -webkit-transition: width 1.35s ease-in-out;transition: width 1.35s ease-in-out;width: 90px;height: 90px;}*/
+
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li:first-of-type a{background-color: #26C6DA;}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li:nth-of-type(2) a{background-color: #FF6C3A}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li:nth-of-type(3) a{background-color: #673AB7}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li:nth-of-type(4) a{background-color: #29ab98;}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li.active a {background-color:#646464;color:#333333 !important;}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li.active a i {color:#333333 !important;}
+#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a.nav-link.rib-content:hover i,#gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a.nav-link.rib-content:hover span {color:#333;}
+
+
+
+@media (max-width: 319.98px) {     
+    .navbar-brand > img{width:109px;}
+    .navbar-brand {line-height: 37px;}    
+    #gitplNavbar .navbar-brand > img{margin-bottom:0px;padding: 20px 0px 3px 0px;}
+    #gitplNavbar.navbar .navbar-collapse .nav-link {font-size: 15px;font-weight: 600;padding:13px 20px 13px 20px;}
+    #gitplNavbar .nav-link .subtext{font-size: 9px;line-height: 9px;}
+    #gitplNavbar.navbar .dropdown-menu {height:auto;}
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 320px ) and (max-width: 575.98px) {     
+    .navbar-brand > img{width:112px;}
+    .navbar-brand {line-height: 37px;}    
+    #gitplNavbar .navbar-brand > img{margin-bottom:0px;padding: 15px 0px 15px 0px;}
+    #gitplNavbar.navbar .navbar-collapse .nav-link {font-size: 16px;font-weight: 600;padding:13px 20px 13px 20px;}
+    #gitplNavbar .nav-link .subtext{font-size:9px;line-height:9px;}
+    #gitplNavbar.navbar .dropdown-menu {height:auto;}
+
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .navbar-brand > img{width:112px;}
+    .navbar-brand {line-height: 37px;}    
+    #gitplNavbar .navbar-brand > img{margin-bottom:4px;padding: 8px 0px 8px 0px;}
+    #gitplNavbar.navbar .navbar-collapse .nav-link {font-size: 16px;font-weight: 600;padding:13px 20px 13px 20px;}
+    #gitplNavbar .nav-link .subtext{font-size: 9px;line-height: 9px;}
+    #gitplNavbar.navbar .dropdown-menu.index {height:auto;}
+    #gitplNavbar.navbar .dropdown-menu {height:auto;}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {     
+    .navbar-brand > img{width:117px;}
+    .navbar-brand {line-height: 37px;}    
+    #gitplNavbar .navbar-brand > img{margin-bottom:4px;padding: 10px 0px 10px 0px;}
+    #gitplNavbar.navbar .navbar-collapse .nav-link {font-size: 16px;font-weight: 600;padding:13px 20px 13px 20px;}
+    #gitplNavbar .nav-link .subtext{font-size: 9px;line-height: 9px;}
+    #gitplNavbar.navbar .dropdown-menu.index {height:auto;}
+    #gitplNavbar.navbar .dropdown-menu {height:auto;}
+    #gitplNavbar.navbar .dropdown-menu .mega-dropdown .navbar-nav {
+        display:inherit ;
+    }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {   
+    .navbar-brand > img{width:129px;}
+    .navbar-brand {line-height: 37px;}    
+    #gitplNavbar .navbar-brand > img{margin-bottom:4px;padding: 20px 0px 10px 0px;}
+    #gitplNavbar.navbar .navbar-collapse .nav-link {font-size: 16px;font-weight: 600;padding: 20px 10px 10px 10px;}
+    #gitplNavbar .nav-link .subtext{font-size:9px;line-height:9px;}
+    #gitplNavbar.navbar .dropdown-menu.index {height:500px;}
+    #gitplNavbar.navbar .dropdown-menu {height:300px;}
+
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {     
+    .navbar-brand > img{width:165px;}
+    .navbar-brand {line-height: 37px;}    
+    #gitplNavbar .navbar-brand > img{margin-bottom:4px;padding: 20px 0px 8px 0px;}
+    #gitplNavbar.navbar .navbar-collapse .nav-link.main-nav-link{font-size: 18px;font-weight: 600;padding: 50px 10px 10px 10px;}
+    #gitplNavbar .nav-link .subtext{font-size: 11px;line-height: 10px;}
+    #gitplNavbar.navbar .navbar-collapse .custom-ribbon ul li a {color:#fff;}
+    #gitplNavbar.navbar .dropdown-menu.index {height:500px;}
+    #gitplNavbar.navbar .dropdown-menu {height:300px;}
+}
+
+
+.navbar {
+    flex-wrap: nowrap;
+}
+ul.forward-arrow li:after{position: absolute;content: '';top: 64px;left: 198px;background: url('../../images/arrow-hand.png')3px 3px;width: 73px;height: 33px;background-repeat: no-repeat;z-index: 2;transform: rotate(8deg);} 
+ul.forward-arrow li:last-child:after{display: none;} 

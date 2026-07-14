@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-ng-app="userGitpl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="" />
+        <meta name="google-site-verification" content="" />
+
+        <title>Teams - GITPL</title>
+        <link rel='shortcut icon' href='assets/images/gitpl-favicon.png' />       
+        <!--css-->
+        <link href="assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="user-assets-custom/css/page/topbar.css" rel="stylesheet"/>
+        <link href="user-assets-custom/css/page/navbar.css" rel="stylesheet"/>
+        <link href="user-assets-custom/css/page/businessChallenges.css" rel="stylesheet"/>
+        <link href="user-assets-custom/css/page/content.css" rel="stylesheet"/>
+        <link href="user-assets-custom/css/page/team.css" rel="stylesheet"/>
+        <link href="user-assets-custom/css/page/supportstrip.css" rel="stylesheet"/>
+        <link href="user-assets-custom/css/page/footer.css" rel="stylesheet"/>
+        <link href="user-assets-custom/css/style.css" rel="stylesheet"/>  
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+        <!--js--> 
+    </head>
+    <body class="card-no-border ">        
+        <div id="main-wrapper">
+
+            <!--Topbar Start-->            
+            <div id="topbar" class="container-fluid p-0 st">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-4 smallLogo">                            
+                            <a href="index.html"><span class="text-white"><img src="assets/images/GITPLlogo.png" alt="gitpllogo"/> GITPL</span></a>
+                        </div>
+                        <div class="col-8">
+                            <ul class="list-inline topbar-inline">                            
+                                <li class="list-inline-item dropdown show">
+                                    <a href="#" class="dropdown-toggle" id="qcMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+                                    <div class="dropdown-menu" aria-labelledby="qcMenu">
+                                        <a class="dropdown-item" href="about-gitpl.html">About</a>
+                                        <a class="dropdown-item" href="why-gitpl.html">Why GITPL?</a>
+                                        <a class="dropdown-item" href="gitpl-offers.html">Offers</a>
+                                        <a class="dropdown-item" href="contact-gitpl.html">Contact</a>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item dk"><a href="about-gitpl.html">About</a></li>
+                                <li class="list-inline-item dk"><a href="why-gitpl.html">Why GITPL?</a></li>                            
+                                <li class="list-inline-item dk"><a href="gitpl-offers.html">Offers</a></li>
+                                <li class="list-inline-item dk"><a href="contact-gitpl.html">Contact</a></li>
+                                <li class="list-inline-item searchbtn">
+                                    <div class="search-input">                                   
+                                        <input type="text" class="form-control" name="websearch" id="websearch" placeholder="search in gitpl.com">
+                                    </div>
+                                    <span class="searchText"><span>Search</span> &nbsp;<i class="fa fa-search"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            <!--Topbar End-->
+
+            <!--Navbar Start-->
+            <nav id="gitplNavbar" class="navbar navbar-light navbar-expand-lg" data-ng-controller="MenuController">
+                <div class='container'>
+                    <a class="navbar-brand" href="index.html" >
+                        <img src="assets/images/GITPLlogo_b.png" class="d-inline-block align-top" alt="logo"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#gitplMainMenu" aria-controls="gitplMainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="gitplMainMenu">
+                        <ul class="mr-auto"></ul>
+                        <ul class="navbar-nav">                    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="javascript:void(0)" id="navbarDropdownS" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Solution<h5 class="subtext text-uppercase m-0">Provide Solution</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownS">
+
+                                    <div class="container custom-ribbon menuFilter-hs">
+                                        <h3 class="text-center text-white" style="font-weight:600">GITPL APPROACH</h3>
+                                        <div class='col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto p-0'>
+                                            <ul class="navbar-nav row forward-arrow" >
+                                                <li class="nav-item col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="icon-consulting"></i>                                                        
+                                                        <span class="pull-right m-0">Consulting</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="icon-reseller"></i>                                                        
+                                                        <span class="pull-right m-0">Reseller</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="icon-deployment"></i>                                                        
+                                                        <span class="pull-right m-0">Deployment</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="icon-management"></i>                                                        
+                                                        <span class="pull-right m-0">Management</span>
+                                                    </a>
+                                                </li>                                  
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!--Sub menu filter-->
+                                    <div class="container mega-dropdown m-b-10 sub-menu-hs m-t-30">                                         
+                                        <div class='col-xl-11 col-lg-11 col-md-12 col-sm-12 col-xs-12 m-auto'>
+                                            <ul class="navbar-nav row ">
+                                                <li class="nav-item col-sm csmenu">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase ">
+                                                        <i class="icon-cloudsolution"></i>
+                                                        Cloud Solution
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-sm hwmenu">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                        <i class="icon-hardware"></i>
+                                                        Hardware
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-sm swmenu">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                        <i class="icon-software"></i>
+                                                        Software
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-sm symenu">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                        <i class="icon-security"></i>
+                                                        Security
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                     
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="container mega-dropdown m-b-10 sub-sub-menu-hs">
+
+                                        <span class="backtomenu-hs" >
+                                            <i class="fa fa-angle-left"></i>&nbsp; Back to Menu
+                                        </span>
+                                        <div class='col-xl-11 col-lg-11 col-md-12 col-sm-12 col-xs-12 m-auto m-b-10 p-t-15'>
+                                            <!--Cloud SOlution Hover-->
+                                            <ul class="navbar-nav row m-b-5 cloudsolution">
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-cloudmigration"></i>Cloud Migration<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-cloudsecurity"></i>Cloud Security<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-systemvirtualization"></i>System Virtualization<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-backupdr"></i>Backup & DR<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                            </ul>
+                                            <!--Cloud SOlution Hover-->
+
+                                            <!--Hardware Hover-->
+                                            <ul class="navbar-nav row hardware">
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-serverinfrastructure"></i>Server Infrastructure<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-networking"></i>Networking<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-hardwareconsolidation"></i>Hardware Consolidation<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                          
+                                            </ul>
+                                            <!--Hardware Hover-->
+
+                                            <!--Software Hover-->
+                                            <ul class="navbar-nav row software">
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-cloudconsulting"></i>Consulting<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-development"></i>Development<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-assetsmanagement-1"></i>Assets Management<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                          
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-authorizedreseller"></i>Authorized Reseller<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                           
+                                            </ul>
+                                            <!--Software Hover-->
+
+                                            <!--security Hover-->
+                                            <ul class="navbar-nav row security">
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-networksecurity"></i>Network Security<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-serversecurity"></i>Server Security<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-encryption"></i>Encryption<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                          
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-mdm"></i>MDM/MAM<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                         
+                                            </ul>
+                                            <!--security Hover-->                                            
+                                        </div>
+                                    </div>
+
+                                </div>     
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="javascript:void(0)" id="navbarDropdownM" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Services<h5 class="subtext text-uppercase m-0">Provide Services</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownM">
+
+                                    <div class="container custom-ribbon">
+                                        <h3 class="text-center text-white" style="font-weight:600">GITPL APPROACH</h3>
+                                        <div class='col-xl-10 col-lg-12 col-md-12 col-sm-12 col-xs-12 m-auto p-0'>
+                                            <ul class="navbar-nav row forward-arrow" >
+                                                <li class="nav-item col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="icon-consulting"></i>                                                        
+                                                        <span class="pull-right m-0">Consulting</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="icon-deployment"></i>                                                        
+                                                        <span class="pull-right m-0">Deployment</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="icon-management"></i>                                                        
+                                                        <span class="pull-right m-0">Management</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                                                    <a href="javascript:void(0)" class="nav-link rib-content text-uppercase card waves-effect waves-light waves-ripple">
+                                                        <i class="icon-training"></i>                                                        
+                                                        <span class="pull-right m-0">Training</span>
+                                                    </a>
+                                                </li>                                   
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!--Sub menu filter-->
+                                    <div class="container mega-dropdown m-b-10 sub-menu-ps m-t-30">                            
+                                        <div class='col-xl-11 col-lg-11 col-md-12 col-sm-12 col-xs-12 m-auto'>
+                                            <ul class="navbar-nav row ">
+                                                <li class="nav-item col-sm msmenu">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase ">
+                                                        <i class="icon-manageservices-1"></i>
+                                                        Managed Services
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-sm">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                        <i class="icon-fms-1"></i>
+                                                        FMS
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-sm">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                        <i class="icon-backupdr"></i>
+                                                        Backup/DR
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-sm">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                        <i class="icon-training"></i>
+                                                        Training
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                   
+                                                <li class="nav-item col-sm">
+                                                    <a href="javascript:void(0)" class="nav-link text-uppercase">
+                                                        <i class="icon-assetsmanagement-2"></i>
+                                                        Asset Management
+                                                        <span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                     
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="container mega-dropdown m-b-10 sub-sub-menu-ps"> 
+                                        <span class="backtomenu-ps" >
+                                            <i class="fa fa-angle-left"></i>&nbsp; Back to Menu
+                                        </span>
+                                        <div class='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 m-auto m-b-10 p-t-15'>
+                                            <!--Managed Services Hover-->
+                                            <ul class="navbar-nav row managedservices">
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-ITmanagement"></i>Full IT Management<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                                  
+                                                <li class="nav-item col-sm ">
+                                                    <a href="" class="nav-link text-uppercase">
+                                                        <i class="icon-remotesupport"></i>Remote Tech Support<span>We're the partner you can trust</span>
+                                                    </a>
+                                                </li>                          
+                                            </ul>
+                                            <!--Managed Services Hover-->
+                                        </div>    
+                                    </div> 
+
+                                </div>    
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link main-nav-link waves-effect waves-dark waves-ripple text-uppercase" href="business-challenges.html">
+                                    Business Challenges
+                                    <h5 class="subtext text-uppercase m-0">Provide Services</h5>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Navbar End-->
+
+            <div id="page-wrapper">                
+
+                <!--Static Banner section start-->
+                <div id="staticBanner" class="container-fluid p-0">
+                    <div class="container">
+                        <div class="row">
+                            <img src="https://www.cpaaustralia.com.au/~/media/corporate/allimages/1-become-a-cpa/migration-assessment/migration-assessment-banner.jpg?h=269&la=en&w=960" alt="" class="img-responsive"/>
+                        </div>
+                    </div>
+                </div>
+                <!--Static Banner section End-->
+
+                <!--breadcrumb section start-->
+                <div id="breadcrumb" class="container-fluid p-0">
+                    <div class="container">
+                        <div class="row">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item "><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active ">Gitpl Team</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--breadcrumb section end-->
+
+                <!--Content section Start-->
+                <div id="contentSection" class="container-fluid p-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 mainContent"> 
+                                <h4>GITPL Team</h4>
+                                <p class="">Our technology solutions and client relationships are built by a dedicated and diverse team working collaboratively to exceed client expectations. </p>
+
+                                <div class="team-listing">
+                                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                        <div class="team-listing_photo__wrap">
+                                            <div class="team-listing_photo">
+                                                <a href="#">
+                                                    <img src="https://ld-wp.template-help.com/wordpress_prod-15836/v1/wp-content/uploads/2017/03/team1-360x360.jpg" class="avatar wp-post-image" alt="John Smith" >
+                                                </a>
+                                            </div>
+                                            <div class="team-listing_photo__overflow">
+                                                <div class="team-listing_socials">
+                                                    <div class="team-socials">
+                                                        <div class="team-socials_item">
+                                                            <a href="#" class="team-socials_link" rel="nofollow">
+                                                                <i class="team-socials_icon fa fa-facebook"></i>
+                                                                <span class="team-socials_label empty-label"></span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-socials_item">
+                                                            <a href="#" class="team-socials_link" rel="nofollow">
+                                                                <i class="team-socials_icon fa fa-twitter"></i>
+                                                                <span class="team-socials_label empty-label"></span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="team-socials_item">
+                                                            <a href="#" class="team-socials_link" rel="nofollow">
+                                                                <i class="team-socials_icon fa fa-google-plus"></i>
+                                                                <span class="team-socials_label empty-label"></span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <!--Content section End-->
+
+                <!--Support section Start-->
+                <div id="supportContain" class="container-fluid p-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 supportContain-Block">
+                                <!--<p><strong>Want to know more about Mail Migration?</strong> <span> Call us on</span> <strong>+91 (020) 67445525</strong> <span>or email us at</span> <a href="mailto:sita.eleswarapu@gitpl.com?subject=Please tell me more about Microsoft 365"><strong>sita.eleswarapu@gitpl.com</strong></a></p>-->
+                                <p>Need to know more? Please explore Our Website and get in touch with any questions. We'll be delighted to help.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Support section End-->
+
+                <!--footer Section Start-->
+                <div id="footer">
+                    <div id="footerInfo" class="container-fluid">
+                        <div class="container"> 
+                            <div class="row"> 
+
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 footer-widget"> 
+                                    <h4>Careers</h4> 
+                                    <ul class="list-footer">
+                                        <li><a href="career_overview.html">Career Overview</a></li>
+                                        <li><a href="why-gitpl.html">Why GITPL Career?</a></li>                                        
+                                        <li><a href="jobopening-gitpl.html">Job Openings</a></li>
+                                        <li><a href="leadership.html">Leadership</a></li>                                        
+                                        <li><a href="#">Teams</a></li> 
+                                    </ul> 
+                                </div>
+                                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3 col-xs-6 footer-widget"> 
+                                    <h4>Explore</h4> 
+                                    <ul class="list-footer">                                         
+                                        <li><a href="#">Partners</a></li>                                        
+                                        <li><a href="#">Awards & Accolades</a></li> 
+                                        <li><a href="#">Events & Webinars</a></li>
+                                        <li><a href="faq.html">FAQ</a></li>                                        
+                                    </ul> 
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-widget"> 
+                                    <h4>Follow Us &nbsp;<i class="fa fa-twitter text-twitter" style="font-size:21px;"></i></h4> 
+
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <p class=""><a href="#">@genie</a>:&nbsp;We are happy to meet more people at to share our views on how our solutions can prove.</p> 
+                                            <a href="https://t.co/O5QHbWyXKK">https://t.co/O5QHbWyXKK</a>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-reply "></i></a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-retweet "></i></a></li>
+                                                <li class="list-inline-item pull-right"><span class="twitter_date">about 11 hours ago</span></li>                                                
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p class=""><a href="#">@genie</a>:&nbsp;We are happy to meet more people at to share our views on how our solutions can prove.</p> 
+                                            <a href="https://t.co/O5QHbWyXKK">https://t.co/O5QHbWyXKK</a>
+                                            <ul class="list-inline">
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-reply "></i></a></li>
+                                                <li class="list-inline-item"><a href="#"><i class="fa fa-retweet "></i></a></li>
+                                                <li class="list-inline-item pull-right"><span class="twitter_date">about 11 hours ago</span></li>                                                
+                                            </ul>
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 footer-widget"> 
+                                    <h4>Share With Us &nbsp;<i class="fa fa-facebook text-facebook" style="font-size:21px;"></i></h4> 
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Footer Section End-->
+
+                 <!--Copyright Section Start-->
+                <div id="copyRight" class="container-fluid "> 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <p>Copyright 2018 © <a href="index.html">Genie InfoTech Pvt. Ltd.</a></p>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12 social-widget">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item"><i class="fa fa-facebook-square f"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-twitter-square t"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-google-plus-square g"></i></li>
+                                    <li class="list-inline-item"><i class="fa fa-linkedin-square l"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Copyright Section End-->
+
+                <div class="scroll_top">
+                    <a title="top" href="javascript:void(0)"><img src="user-assets-custom/images/scroll_top.jpg" alt="scroll-top"/></a>
+                </div>
+            </div>  
+            <script src="assets/node_modules/jquery/jquery.2.1.1.js"></script>
+            <script src="assets/node_modules/bootstrap/js/popper.min.js"></script>
+            <script src="assets/node_modules/bootstrap/js/bootstrap.min.js"></script> 
+            <script src="user-assets-custom/js/waves.js"></script> 
+            <script src="user-assets-custom/js/custom.js"></script>
+            <script src="user-assets-custom/js/custom-other.js"></script>
+        </div>
+
+    </body>
+</html>

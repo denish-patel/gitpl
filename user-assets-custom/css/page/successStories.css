@@ -1,0 +1,93 @@
+#successStories h4{color:#fff;}
+#successStories .container-fluid {background-color:#2e3138;}
+#successStories .cd-horizontal-timeline ol, #successStories .cd-horizontal-timeline ul {list-style-type: none;}
+#successStories .cd-horizontal-timeline {opacity: 0;-webkit-transition: opacity 0.2s;-moz-transition: opacity 0.2s;transition: opacity 0.2s;}
+#successStories .cd-horizontal-timeline::before {content: 'mobile';display: none;}
+#successStories .cd-horizontal-timeline.loaded {opacity: 1;}
+#successStories .cd-horizontal-timeline .timeline {position: relative;height: 100px;max-width: 1200px;margin:40px auto 0px auto}
+#successStories .cd-horizontal-timeline .events-wrapper {position: relative;height: 100%;margin:0 40px;overflow: hidden;}
+#successStories .cd-horizontal-timeline .events-wrapper::after, #successStories .cd-horizontal-timeline .events-wrapper::before {content: '';position: absolute; z-index: 2; top: 0; height: 100%; width: 20px;}
+#successStories .cd-horizontal-timeline .events-wrapper::before {left: 0;  background-image: -webkit-linear-gradient( left , #2e3138, rgba(248, 248, 248, 0));  background-image: linear-gradient(to right, #2e3138, rgba(248, 248, 248, 0));}
+#successStories .cd-horizontal-timeline .events-wrapper::after {right: 0; background-image: -webkit-linear-gradient( right , #2e3138, rgba(248, 248, 248, 0)); background-image: linear-gradient(to left, #2e3138, rgba(248, 248, 248, 0));}
+#successStories .cd-horizontal-timeline .events {position: absolute;z-index: 1;left: 0;top: 49px;height: 2px;background: #dfdfdf;-webkit-transition: -webkit-transform 0.4s;-moz-transition: -moz-transform 0.4s;transition: transform 0.4s;}
+#successStories .cd-horizontal-timeline .filling-line {position:absolute;z-index:1;left:0;top:0;height:100%;width:100%;background-color:#ed6b14;-webkit-transform: scaleX(0);  -moz-transform: scaleX(0);  -ms-transform: scaleX(0);  -o-transform: scaleX(0);  transform: scaleX(0);  -webkit-transform-origin: left center;  -moz-transform-origin: left center;  -ms-transform-origin: left center;  -o-transform-origin: left center;  transform-origin: left center;  -webkit-transition: -webkit-transform 0.3s;  -moz-transition: -moz-transform 0.3s;  transition: transform 0.3s;}
+#successStories .cd-horizontal-timeline .events a {font-weight:600;position:absolute;bottom:0;z-index:2;text-align: center;  font-size:17px;  padding-bottom: 15px;  color: #eee;  -webkit-transform: translateZ(0);  -moz-transform: translateZ(0);  -ms-transform: translateZ(0);  -o-transform: translateZ(0);  transform: translateZ(0);}
+#successStories .cd-horizontal-timeline .events a::after { content: '';position: absolute;left: 50%;right: auto;-webkit-transform: translateX(-50%);-moz-transform: translateX(-50%);-ms-transform: translateX(-50%);-o-transform: translateX(-50%);transform: translateX(-50%);bottom:-4.5px;height: 12px;width: 12px;border-radius: 50%;border: 2px solid #dfdfdf;  background-color: #f8f8f8;  -webkit-transition: background-color 0.3s, border-color 0.3s;  -moz-transition: background-color 0.3s, border-color 0.3s;  transition: background-color 0.3s, border-color 0.3s;}
+.no-touch #successStories .cd-horizontal-timeline .events a:hover::after { background-color: #ed6b14; border-color: #ed6b14;}
+#successStories .cd-horizontal-timeline .events a.selected {pointer-events: none;font-weight: 900;color: #ed6b14;font-size: 1.4rem;}
+#successStories .cd-horizontal-timeline .events a.selected::after {background-color: #ed6b14; border-color: #ed6b14;}
+#successStories .cd-horizontal-timeline .events a.older-event::after {border-color: #ed6b14;}
+
+@media only screen and (min-width: 1100px) {
+    #successStories .cd-horizontal-timeline {margin: 0px auto;}
+    #successStories .cd-horizontal-timeline::before {content: 'desktop';}
+}
+
+#successStories .cd-timeline-navigation a {  position: absolute;z-index: 1;top: 50%;bottom: auto;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);transform: translateY(-50%);height: 34px;width: 34px;border-radius: 50%;border: 2px solid #dfdfdf;overflow: hidden;color: transparent;text-indent: 100%;white-space: nowrap;-webkit-transition: border-color 0.3s;-moz-transition: border-color 0.3s;transition: border-color 0.3s;}
+#successStories .cd-timeline-navigation a::after {content: '';position: absolute;height: 16px;width: 16px;left: 50%;top: 50%;bottom: auto;right: auto;-webkit-transform: translateX(-50%) translateY(-50%);-moz-transform: translateX(-50%) translateY(-50%);-ms-transform: translateX(-50%) translateY(-50%);-o-transform: translateX(-50%) translateY(-50%);transform: translateX(-50%) translateY(-50%);background: url(../img/cd-arrow.svg) no-repeat 0 0;}
+#successStories .cd-timeline-navigation a.prev {left: 0; -webkit-transform: translateY(-50%) rotate(180deg);-moz-transform: translateY(-50%) rotate(180deg);-ms-transform: translateY(-50%) rotate(180deg);-o-transform: translateY(-50%) rotate(180deg);transform: translateY(-50%) rotate(180deg);}
+#successStories .cd-timeline-navigation a.next {right: 0;}
+.no-touch #successStories .cd-timeline-navigation a:hover {border-color: #ed6b14;}
+#successStories .cd-timeline-navigation a.inactive {cursor: not-allowed;}
+#successStories .cd-timeline-navigation a.inactive::after {background-position: 0 -16px;}
+.no-touch #successStories .cd-timeline-navigation a.inactive:hover {border-color: #dfdfdf;}
+#successStories .cd-horizontal-timeline .events-content {position: relative;overflow: hidden;-webkit-transition: height 0.4s;-moz-transition: height 0.4s;transition: height 0.4s;}
+#successStories .cd-horizontal-timeline .events-content li {position: absolute;z-index: 1; width: 85%;margin:0px auto; left: 0;top: 0;-webkit-transform: translateX(-100%);-moz-transform: translateX(-100%);ms-transform: translateX(-100%);-o-transform: translateX(-100%);transform: translateX(-100%);padding: 0;opacity: 0;-webkit-animation-duration: 0.4s;-moz-animation-duration: 0.4s;animation-duration: 0.4s;-webkit-animation-timing-function: ease-in-out;-moz-animation-timing-function: ease-in-out;animation-timing-function: ease-in-out;}
+#successStories .cd-horizontal-timeline .events-content li.selected {position: relative;z-index: 2;opacity: 1;-webkit-transform: translateX(0);-moz-transform: translateX(0);-ms-transform: translateX(0);-o-transform: translateX(0); transform: translateX(0);}
+#successStories .cd-horizontal-timeline .events-content li.enter-right, #successStories .cd-horizontal-timeline .events-content li.leave-right {-webkit-animation-name: cd-enter-right;-moz-animation-name: cd-enter-right; animation-name: cd-enter-right;}
+#successStories .cd-horizontal-timeline .events-content li.enter-left, #successStories .cd-horizontal-timeline .events-content li.leave-left {-webkit-animation-name: cd-enter-left;-moz-animation-name: cd-enter-left; animation-name: cd-enter-left;}
+#successStories .cd-horizontal-timeline .events-content li.leave-right, #successStories .cd-horizontal-timeline .events-content li.leave-left {-webkit-animation-direction: reverse;-moz-animation-direction: reverse;animation-direction: reverse;}
+#successStories .cd-horizontal-timeline .events-content li > * {max-width: 970px;margin: 0 auto;}
+#successStories .cd-horizontal-timeline .events-content h1 {font-size: 26px;font-weight: 600;line-height: 1.2;color: #fff;margin-bottom: 15px;}
+#successStories .cd-horizontal-timeline .events-content em {display: block;font-style: normal;margin:15px auto;color:#ed6b14;font-weight:900;font-size:38px}
+/*.cd-horizontal-timeline .events-content em::before {content: '- ';}*/
+#successStories .cd-horizontal-timeline .events-content p {font-size: 19px; color: #959595;}
+#successStories .cd-horizontal-timeline .events-content em, #successStories .cd-horizontal-timeline .events-content p {line-height: 28px;}
+
+
+@media (max-width: 319.98px) {
+    #successStories .cd-horizontal-timeline .timeline {width:95%;}
+    #successStories .cd-horizontal-timeline .events-content {margin:10px 0 20px 0;min-height:320px;text-align: center}
+    #successStories .cd-horizontal-timeline .events-content img {width:20%;}
+    #successStories .cd-horizontal-timeline .events-content ol{margin-left:-40px;}  
+}
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (min-width: 320px ) and (max-width: 575.98px) { 
+    #successStories .cd-horizontal-timeline .timeline {width:95%;}
+    #successStories .cd-horizontal-timeline .events-content {margin:10px 0 20px 0;min-height:320px;text-align: center}
+    #successStories .cd-horizontal-timeline .events-content ol{margin-left:-40px;}
+    #successStories .cd-horizontal-timeline .events-content img {width:20%;}
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #successStories .cd-horizontal-timeline .timeline {width:95%;}
+    #successStories .cd-horizontal-timeline .events-content {margin:10px 0 20px 0;min-height:320px;text-align: center}
+    #successStories .cd-horizontal-timeline .events-content ol{margin-left:-40px;}
+    #successStories .cd-horizontal-timeline .events-content img {width:20%;} 
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #successStories .cd-horizontal-timeline .timeline {width:95%;}
+    #successStories .cd-horizontal-timeline .events-content {margin:10px 0 20px 0;min-height:320px;text-align: center}
+    #successStories .cd-horizontal-timeline .events-content ol{margin-left:-40px;}
+    #successStories .cd-horizontal-timeline .events-content img {width:10%;} 
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {    
+    #successStories .cd-horizontal-timeline .timeline {width:600px;}
+    #successStories .cd-horizontal-timeline .events-content {width: 1000px;margin:10px 0 20px 0;min-height:320px;text-align: center}
+    #successStories .cd-horizontal-timeline .events-content ol{margin-left:-40px;}
+    #successStories .cd-horizontal-timeline .events-content img {width:10%;} 
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    #successStories .cd-horizontal-timeline .timeline {width:600px;}
+    #successStories .cd-horizontal-timeline .events-content {width: 1000px;margin:10px 0 20px 0;min-height:320px;text-align: center}
+    #successStories .cd-horizontal-timeline .events-content ol{margin-left:-40px;}
+    #successStories .cd-horizontal-timeline .events-content img {width:10%;}
+}

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-ng-app="adminGitpl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robata" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <!--<meta name="google-site-verification" content="" />-->
+
+    <title>Jobs | GITPL </title>
+    <link rel='shortcut icon' href='../assets/images/gitpl-favicon.png' />
+    <!--<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+            <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+            <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+            <link rel="shortcut icon" href="favicon.ico">-->
+
+    <!--css-->
+    <link href="../assets/node_modules/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="../assets/node_modules/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />-->
+    <link href="../admin-assets-custom/css/style.css" rel="stylesheet" />
+    <link href="../admin-assets-custom/css/pages/dashboard1.css" rel="stylesheet" />
+    <link href="../admin-assets-custom/css/colors/default-dark.css" id="theme" rel="stylesheet" />
+    <link href="../assets/node_modules/footable/css/footable.core.css" rel="stylesheet">
+    <link href="../assets/node_modules/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>-->
+
+
+
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <!--<p class="loader__label">GITPL</p>-->
+        </div>
+    </div>
+    <div id="main-wrapper">
+        <header class="topbar" data-ng-controller="headerController">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="admin">
+                        <img src="../assets/images/GITPLlogo.png" alt="homepage" width="25" class="dark-logo" />
+
+                        <span class="lead" style="font-weight:600;margin-top:20px;">
+                            Genie InfoTech
+                        </span>
+                    </a>
+                </div>
+
+                <div class="navbar-collapse">
+
+                    <ul class="navbar-nav mr-auto">
+                        <!-- This is  -->
+                        <li class="nav-item">
+                            <a class="nav-link nav-toggler hidden-md-up waves-effect waves-dark" href="javascript:void(0)">
+                                <i class="sl-icon-menu"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sidebartoggler hidden-sm-down waves-effect waves-dark" href="javascript:void(0)">
+                                <i class="sl-icon-menu"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item hidden-xs-down search-box">
+                            <a class="nav-link hidden-sm-down waves-effect waves-dark" href="javascript:void(0)">
+                                <i class="icon-Magnifi-Glass2"></i>
+                            </a>
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search & enter">
+                                <a class="srh-btn">
+                                    <i class="ti-close"></i>
+                                </a>
+                            </form>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav my-lg-0">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-Bell"></i>
+                                <div class="notify">
+                                    <span class="heartbit"></span>
+                                    <span class="point"></span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">Notifications</div>
+                                    </li>
+                                    <li>
+                                        <div class="message-center">
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="btn btn-danger btn-circle">
+                                                    <i class="fa fa-link"></i>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Lunch Admin</h5>
+                                                    <span class="mail-desc">Just see the my new admin!</span>
+                                                    <span class="time">9:30 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="btn btn-success btn-circle">
+                                                    <i class="ti-calendar"></i>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Event today</h5>
+                                                    <span class="mail-desc">Just a reminder that you have event</span>
+                                                    <span class="time">9:10 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="btn btn-info btn-circle">
+                                                    <i class="ti-settings"></i>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Settings</h5>
+                                                    <span class="mail-desc">You can customize this template as you want</span>
+                                                    <span class="time">9:08 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="btn btn-primary btn-circle">
+                                                    <i class="ti-user"></i>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5>
+                                                    <span class="mail-desc">Just see the my admin!</span>
+                                                    <span class="time">9:02 AM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center" href="javascript:void(0);">
+                                            <strong>Check all notifications</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="icon-Mail"></i>
+                                <div class="notify">
+                                    <span class="heartbit"></span>
+                                    <span class="point"></span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu mailbox dropdown-menu-right animated bounceInDown" aria-labelledby="2">
+                                <ul>
+                                    <li>
+                                        <div class="drop-title">You have 4 new messages</div>
+                                    </li>
+                                    <li>
+                                        <div class="message-center">
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="user-img">
+                                                    <img src="../assets/images/users/1.jpg" alt="user" class="img-circle">
+                                                    <span class="profile-status online pull-right"></span>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5>
+                                                    <span class="mail-desc">Just see the my admin!</span>
+                                                    <span class="time">9:30 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="user-img">
+                                                    <img src="../assets/images/users/2.jpg" alt="user" class="img-circle">
+                                                    <span class="profile-status busy pull-right"></span>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Sonu Nigam</h5>
+                                                    <span class="mail-desc">I've sung a song! See you at</span>
+                                                    <span class="time">9:10 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="user-img">
+                                                    <img src="../assets/images/users/3.jpg" alt="user" class="img-circle">
+                                                    <span class="profile-status away pull-right"></span>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Arijit Sinh</h5>
+                                                    <span class="mail-desc">I am a singer!</span>
+                                                    <span class="time">9:08 AM</span>
+                                                </div>
+                                            </a>
+                                            <!-- Message -->
+                                            <a href="#">
+                                                <div class="user-img">
+                                                    <img src="../assets/images/users/4.jpg" alt="user" class="img-circle">
+                                                    <span class="profile-status offline pull-right"></span>
+                                                </div>
+                                                <div class="mail-contnet">
+                                                    <h5>Pavan kumar</h5>
+                                                    <span class="mail-desc">Just see the my admin!</span>
+                                                    <span class="time">9:02 AM</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link text-center" href="javascript:void(0);">
+                                            <strong>See all e-Mails</strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="flag-icon flag-icon-in"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right animated bounceInDown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="flag-icon flag-icon-in"></i> India
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="flag-icon flag-icon-fr"></i> French
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="flag-icon flag-icon-cn"></i> China
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="flag-icon flag-icon-de"></i> Dutch
+                                </a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown u-pro">
+                            <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <img src="../assets/images/users/1.jpg" alt="user" class="" />
+                                <span class="hidden-md-down">Denish Patel &nbsp;
+                                    <i class="fa fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img">
+                                                <img src="../assets/images/users/1.jpg" alt="user">
+                                            </div>
+                                            <div class="u-text">
+                                                <h4>{{userDetails.username}}</h4>
+                                                <p class="text-muted">{{userDetails.EmailID}}</p>
+                                                <a href="../admin/profile" class="btn btn-rounded btn-danger btn-sm waves-effect waves-dark">View Profile</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="../admin/profile">
+                                            <i class="ti-user"></i> My Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-wallet"></i> My Balance</a>
+                                    </li>
+                                    <li>
+                                        <a href="../admin/inbox">
+                                            <i class="ti-email"></i> Inbox</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-settings"></i> Account Setting</a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-power-off"></i> Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar" data-ng-controller="asideController">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a class="waves-effect waves-light" href="../admin/dashboard.html" aria-expanded="false">
+                                <i class="icon-Car-Wheel"></i>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="../admin/seo.html" aria-expanded="false">
+                                <i class="icon-Car-Wheel"></i>
+                                <span class="hide-menu">SEO</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="../admin/employees.html" aria-expanded="false">
+                                <i class="icon-Car-Wheel"></i>
+                                <span class="hide-menu">Employees</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="../admin/testimonial.html" aria-expanded="false">
+                                <i class="icon-Car-Wheel"></i>
+                                <span class="hide-menu">Testimonials</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="../admin/careers.html" aria-expanded="false">
+                                <i class="icon-Car-Wheel"></i>
+                                <span class="hide-menu">Job Posting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="waves-effect waves-light" href="../admin/feedback.html" aria-expanded="false">
+                                <i class="icon-Car-Wheel"></i>
+                                <span class="hide-menu">Feedback</span>
+                            </a>
+                        </li>
+                        <!--                            <li><a class="has-arrow waves-effect waves-light " href="#" aria-expanded="false">
+                                    <i class="icon-Double-Circle"></i><span class="hide-menu">GITPL</span></a>
+                                <ul aria-expanded="false" class="collapse">                                    
+                                   
+                                    <li><a href="../admin/gallery.html" class="waves-effect waves-light">Gallery</a></li>
+                                    <li><a href="../admin/news.html" class="waves-effect waves-light">Latest News</a></li>
+                                    <li><a href="../admin/feedback.html" class="waves-effect waves-light">Feedback</a></li>
+                                </ul>
+                            </li>  -->
+                        <!--                            <li><a class="has-arrow waves-effect waves-light" href="#" aria-expanded="false">
+                                    <i class="icon-Double-Circle"></i><span class="hide-menu">Outlook</span></a>
+                                <ul aria-expanded="false" class="collapse">                                   
+                                    <li><a href="../admin/compose.html" class="waves-effect waves-light">Compose</a></li>
+                                    <li><a href="../admin/inbox.html" class="waves-effect waves-light">Inbox</a></li>
+                                    <li><a href="../admin/sent.html" class="waves-effect waves-light">Sent</a></li>
+                                    <li><a href="draft" class="waves-effect waves-light">Draft</a></li>
+                                </ul>
+                            </li>-->
+                        <!--                            <li><a class="has-arrow waves-effect waves-light" href="#" aria-expanded="false">
+                                    <i class="icon-Double-Circle"></i><span class="hide-menu">Invoice</span></a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li><a href="../admin/invoice.html" class="waves-effect waves-light">Purchase</a></li>
+                                    <li><a href="../admin/invoice.html" class="waves-effect waves-light">Sales</a></li>
+                                </ul>
+                            </li>-->
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+
+
+
+        <div class="page-wrapper">
+            <div class="container-fluid" data-ng-controller="employeelistController">
+                <div class="row page-titles">
+                    <div class="col-md-5 align-self-center">
+                        <h3 class="text-themecolor">Careers</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="breadcrumb-item active">Careers</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-7 align-self-center text-right">
+                        <button type="button" class="btn btn-info">
+                            <i class="fa fa-plus-circle"></i> Create New</button>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">GITPL CAREERS LIST</h4>
+                                <h6 class="card-subtitle">You can add or remove rows with Footable</h6>
+
+                          
+                                <table id="demo-foo-addrow2" class="table table-bordered table-hover toggle-circle" data-page-size="10">
+                                    <thead>
+                                        <tr>
+                                            <th data-sort-initial="true" data-toggle="true">Title</th>
+                                            <th data-hide="phone, tablet">Keywords</th>
+                                            <th data-hide="phone, tablet">Description</th>
+                                            <th data-hide="phone, tablet">Author</th>
+                                            <th data-hide="phone, tablet">Status</th>
+
+                                            <th data-sort-ignore="true" class="min-width">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <div class="m-t-40">
+                                        <div class="d-flex">
+                                            <div class="mr-auto">
+                                                <div class="form-group">
+                                                    <button id="demo-btn-addrow" data-toggle="modal" data-target="#myModalSeoAdd" class="btn btn-primary btn-sm m-r-5 waves-effect waves-dark">
+                                                        <i class="icon wb-plus" aria-hidden="true"></i>Add New Row
+                                                    </button>
+                                                    <small>New row will be added in last page.</small>
+                                                </div>
+                                            </div>
+                                            <div class="ml-auto">
+                                                <div class="form-group">
+                                                    <input id="demo-input-search2" type="text" placeholder="Search" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <tbody>
+                                        <tr>
+                                            <td>Shona</td>
+                                            <td>Woldt</td>
+                                            <td>Airline Transport Pilot</td>
+                                            <td>3 Oct 2017</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary" data-ng-click='setseoData(1)'>Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Lizzee</td>
+                                            <td>Goodlow</td>
+                                            <td>Technical Services Librarian</td>
+                                            <td>1 Nov 2014</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Isidra</td>
+                                            <td>Boudreaux</td>
+                                            <td>Traffic Court Referee</td>
+                                            <td>22 Jun 2014</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Doris</td>
+                                            <td>Michael</td>
+                                            <td>Business Services Sales Representative</td>
+                                            <td>19 Apr 2013</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Lauri</td>
+                                            <td>Hyland</td>
+                                            <td>Blackjack Supervisor</td>
+                                            <td>15 Nov 2014</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Maple</td>
+                                            <td>Halladay</td>
+                                            <td>Aviation Tactical Readiness Officer</td>
+                                            <td>30 Dec 2017</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorraine</td>
+                                            <td>Mcgaughy</td>
+                                            <td>Hemodialysis Technician</td>
+                                            <td>11 Nov 2014</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Judi</td>
+                                            <td>Badgett</td>
+                                            <td>Electrical Lineworker</td>
+                                            <td>23 Jun 2013</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Granville</td>
+                                            <td>Leonardo</td>
+                                            <td>Business Services Sales Representative</td>
+                                            <td>19 Apr 2013</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Lauri</td>
+                                            <td>Hyland</td>
+                                            <td>Blackjack Supervisor</td>
+                                            <td>15 Nov 2014</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Maple</td>
+                                            <td>Halladay</td>
+                                            <td>Aviation Tactical Readiness Officer</td>
+                                            <td>30 Dec 2017</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lorraine</td>
+                                            <td>Mcgaughy</td>
+                                            <td>Hemodialysis Technician</td>
+                                            <td>11 Nov 2014</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Judi</td>
+                                            <td>Badgett</td>
+                                            <td>Electrical Lineworker</td>
+                                            <td>23 Jun 2013</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Granville</td>
+                                            <td>Leonardo</td>
+                                            <td>Business Services Sales Representative</td>
+                                            <td>19 Apr 2013</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Lauri</td>
+                                            <td>Hyland</td>
+                                            <td>Blackjack Supervisor</td>
+                                            <td>15 Nov 2014</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Easer</td>
+                                            <td>Dragoo</td>
+                                            <td>Drywall Stripper</td>
+                                            <td>13 Dec 2014</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Maple</td>
+                                            <td>Halladay</td>
+                                            <td>Aviation Tactical Readiness Officer</td>
+                                            <td>30 Dec 2017</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maria</td>
+                                            <td>Tangeli</td>
+                                            <td>Drywall Stripper</td>
+                                            <td>21 May 2014</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable">
+                                            <td>Maple</td>
+                                            <td>Halladay</td>
+                                            <td>Aviation Tactical Readiness Officer</td>
+                                            <td>30 Dec 2017</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Easer</td>
+                                            <td>Dragoo</td>
+                                            <td>Drywall Stripper</td>
+                                            <td>13 Dec 2014</td>
+                                            <td>
+                                                <span class="label label-table label-success">Active</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="deletedRecordTable ">
+                                            <td>Maple</td>
+                                            <td>Halladay</td>
+                                            <td>Aviation Tactical Readiness Officer</td>
+                                            <td>30 Dec 2017</td>
+                                            <td>
+                                                <span class="label label-table label-danger">Suspended</span>
+                                            </td>
+                                            <td>
+                                                <span class="label label-table label-primary">Edit</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="6">
+                                                <div class="text-right">
+                                                    <ul class="pagination">
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer"> © 2018 Genie InfoTech Private Limited </footer>
+        </div>
+        <!--js-->
+        <script src="../assets/node_modules/jquery/jquery.min.js"></script>
+        <script src="../assets/node_modules/bootstrap/js/popper.min.js"></script>
+        <script src="../assets/node_modules/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../assets/node_modules/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js "></script>
+        <script src="../admin-assets-custom/js/waves.js"></script>
+        <script src="../admin-assets-custom/js/sidebarmenu.js"></script>
+
+        <script src="../admin-assets-custom/js/custom.min.js"></script>
+        <!-- Footable -->
+        <script src="../assets/node_modules/footable/js/footable.all.min.js"></script>
+        <!--FooTable init-->
+        <script src="../admin-assets-custom/js/footable-init.js"></script>
+
+        <script src="../admin-assets-custom/js/angular.min.js"></script>
+        <script src="../admin-assets-custom/js/dirPagination.js"></script>
+      
+        <script src="../admin-assets-custom/js/angular-controller.js"></script>
+
+    </div>
+</body>
+
+</html>

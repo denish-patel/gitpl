@@ -1,0 +1,8 @@
+#supportContain {background-color:#FF6C3A;}
+#supportContain .supportContain-Block {text-align:center;padding-top: 2rem;padding-bottom: 2rem;}
+#supportContain .supportContain-Block p {font-size: 17px;font-weight:500;color: #212121;margin:0px;}
+#supportContain .supportContain-Block p strong{font-weight:600;color: #fff}
+#supportContain .supportContain-Block p span{color:#121212}
+#supportContain .supportContain-Block p a:hover strong{color:#e5e5e5}
+#supportContain .supportContain-Block p button{border-radius:30px;padding:7px 25px;}
+#supportContain .supportContain-Block p:hover button.btn-default{background-color:#fff;}
